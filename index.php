@@ -1,2 +1,8 @@
-<?php include_once("index.html");
- ?>
+<html>
+	<header><title>Hello World</title></header>
+<body>
+<?php include_once("header.php");?>
+Hello world
+
+</body>
+</html>

@@ -5,6 +5,6 @@
 	include("header.php");
 	?>
 Hello world
-
+<img src="logofavicon.png">
 </body>
 </html>

@@ -1,13 +1,16 @@
 
-<div class="banner">
+<div class="header">
 	<div class="logo">
-	<a href="www.google.com"><img src="logofavicon.png" height="200px"></a>
-	<p>header.php works</p>
+	<a href="index.php"><img src="logofavicon.png" height="200px"></a>
 	</div>
 	<div class="login">
-		<div class="userbutton">
+		<div class="formcontainer">
+			<form method="POST" action="addlocation.php">
+				<div> Username: <input type="text" id="username
+				
+			
+			</form>
 		</div>
-		<div class="passwordbutton">
-		</div>
+	
 	</div>
 </div>

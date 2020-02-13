@@ -1,5 +1,5 @@
 
-<div class="header">
+<header class="header">
 	<div class="logo">
 	<a href="index.php"><img src="logofavicon.png" height="200px"></a>
 	</div>
@@ -13,4 +13,4 @@
 		</div>
 	
 	</div>
-</div>
+</header>

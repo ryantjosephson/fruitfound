@@ -1,9 +1,7 @@
 <html>
 	<header>
 	<title>Hello World</title>
-	<?php 
-	include("header.css");
-	?>
+	<link rel="stylesheet" type="text/css" href="header.css">
 	</header>
 <body>
 	<?php 

@@ -3,8 +3,6 @@
 	<div class="logo">
 	<a href="index.php"><img src="appletree.png" height="150px"></a>
 	</div>
-	<div class="header">
-	</div>
 	<div class="login">
 		<div class="formcontainer">
 			<form method="POST" action="addlocation.php">

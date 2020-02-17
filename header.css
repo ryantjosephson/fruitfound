@@ -2,7 +2,11 @@ header {
 	background-color: lightblue;
 	width: 100%;
 	
+	
 }
 login {
 	display: inline-block;
+}
+logo{
+	display:inline-block;
 }

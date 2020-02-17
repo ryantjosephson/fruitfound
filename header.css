@@ -6,6 +6,9 @@ header {
 }
 .login {
 	display: inline-block;
+	
+}
+.logindiv{
 	margin: 10px;
 }
 .logo{

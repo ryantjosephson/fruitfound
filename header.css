@@ -8,7 +8,8 @@ header {
 	display: inline-block;
 	float: right;
 	background-color: #C7D4E2;
-	vertical-align: center;
+	vertical-align: middle;
+	margin: 20%;
 	
 }
 .logindiv{

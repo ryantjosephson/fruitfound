@@ -7,7 +7,7 @@
 		<div class="formcontainer">
 			<form method="POST" action="addlocation.php">
 				<div class="logindiv"> Username: <input type="text" id="username" name="username"> </div>
-				<div class="logindiv"> Password: <input type="text" id="password" name="password"> </div>
+				<div class="logindiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
 			</form>
 		</div>
 	

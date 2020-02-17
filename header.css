@@ -6,6 +6,7 @@ header {
 }
 .login {
 	display: inline-block;
+	margin: 10px;
 }
 .logo{
 	display:inline-block;

@@ -1,7 +1,7 @@
 
 <header class="header">
 	<div class="logo">
-	<a href="index.php"><img src="appletree.png" height="150px"></a>
+	<a href="index.php"><img src="appletree.png" height="100px"></a>
 	</div>
 	<div class="login">
 		<div class="formcontainer">

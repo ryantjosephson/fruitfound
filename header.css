@@ -1,5 +1,8 @@
 header {
 	background-color: lightblue;
 	width: auto;
+	
+}
+login {
 	display: inline-block;
 }

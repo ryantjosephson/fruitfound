@@ -3,11 +3,11 @@ header {
 	width: 100%;
 	margin: 0;
 	vertical-align: middle;
-	
+	display: flex;
 }
 
 .login {
-	display: inline-block;
+	display: flex;
 	float: right;
 	background-color: #C7D4E2;
 	margin: 30px;
@@ -17,11 +17,11 @@ header {
 	margin: 10px;
 }
 .logo{
-	display:inline-block;
+	display: flex;
 	margin: 15px;
 }
 .title{ 
-	display: inline-block;
+	display: flex;
 	margin: 10px;
 	align: top;
 	float: top;

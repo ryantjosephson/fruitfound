@@ -7,10 +7,12 @@ body{
 .formcontainer{
 	display:flex;
 	border: 3px solid #73AD21;
+	flex-grow: 1;
 }
 
 .welcomecontent{
 	display:flex;
+	flex-grow: 4;
 	border: 3px solid #73AD21;
 }
 .maincontent{

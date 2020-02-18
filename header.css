@@ -2,13 +2,10 @@ header {
 	background-color: lightblue;
 	width: 100%;
 	margin: 0;
-	align-items: center;
 
 	
 }
-div {
-		flex: 1;
-}
+
 .login {
 	display: inline-block;
 	float: right;
@@ -28,6 +25,7 @@ div {
 	display: inline-block;
 	margin: 10px;
 	align: top;
+	float: top;
 	
 }
 .titletext{

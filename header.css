@@ -20,3 +20,8 @@ header {
 	display:inline-block;
 	margin: 15px;
 }
+.title{ 
+	display: inline-block;
+	font-family:Book Antiqua;
+	font-size: 30px;
+}

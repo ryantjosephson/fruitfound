@@ -14,12 +14,12 @@
 	<div class="maincontent">
 		<div class="welcomecontentcontainer">
 			<div class="welcomecontent">
-			<p> Some Content</p>
+			<h2> How to find free fruit and produce in your local community.<h2>
 			</div>
 		</div>
 		<div class="formcontainer">
 			<div class="newuserform">
-				<p>Sign up for a free account</p>
+				<h2>Sign up for a free account</h2>
 				<form method="POST" action="addlocation.php">
 					<div class="newuserdiv"> First Name: <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name: <input type="text" id="lastname" name="lastname"> </div>

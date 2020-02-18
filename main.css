@@ -16,13 +16,16 @@ body{
 	display:flex;
 	flex-grow: 4;
 	border: 3px solid #73AD21;
-	opacity: 1;
+	background-color: white;
 }
 .maincontent{
 	display: flex;
-	background-image: url("orchardbackground.jpg", 0.6);
+	background-image: url("orchardbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: .5;
 	height: 80%;
+}
+
+.newuserform{
+	
 }

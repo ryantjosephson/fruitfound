@@ -20,7 +20,7 @@ body{
 }
 .maincontent{
 	display: flex;
-	background-image: url("orchardbackground.jpg");
+	background-image: url("orchardbackground.jpg", 0.6);
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: .5;

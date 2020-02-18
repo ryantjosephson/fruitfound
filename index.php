@@ -19,6 +19,7 @@
 		</div>
 		<div class="formcontainer">
 			<div class="newuserform">
+				<p>Sign up for a free account</p>
 				<form method="POST" action="addlocation.php">
 					<div class="newuserdiv"> First Name: <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name: <input type="text" id="lastname" name="lastname"> </div>

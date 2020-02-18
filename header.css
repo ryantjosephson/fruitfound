@@ -3,8 +3,11 @@ header {
 	width: 100%;
 	margin: 0;
 	align-items: center;
-	flex: 1;
+
 	
+}
+div {
+		flex: 1;
 }
 .login {
 	display: inline-block;

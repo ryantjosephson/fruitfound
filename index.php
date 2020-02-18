@@ -12,8 +12,10 @@
 	include("header.php");
 	?>
 	<div class="maincontent">
-		<div class="welcomecontent">
+		<div class="welcomeleft">
+			<div class="welcomecontent">
 			<p> Some Content</p>
+			</div>
 		</div>
 		<div class="formcontainer">
 			<div class="newuserform">

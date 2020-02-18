@@ -1,7 +1,10 @@
 <footer>
 	<div id=footer>
 		<p>
-			Testing
+			Page Created by Ryan Josephson
+		</p>
+		<p>
+			ryantjosephson@gmail.com
 		</p>
 	</div>
 </footer>

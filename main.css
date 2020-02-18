@@ -13,12 +13,13 @@ body{
 }
 
 .welcomecontent{
-
+	
 	flex-grow: 4;
 	background-color: white;
 }
 .welcomecontentcontainer{
 	display:flex;
+	width: 70%;
 	
 }
 .maincontent{

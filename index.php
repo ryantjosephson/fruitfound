@@ -12,7 +12,7 @@
 	include("header.php");
 	?>
 	<div class="maincontent">
-		<div class="welcomeleft">
+		<div class="welcomecontentcontainer">
 			<div class="welcomecontent">
 			<p> Some Content</p>
 			</div>

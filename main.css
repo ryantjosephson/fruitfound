@@ -17,7 +17,7 @@ body{
 	flex-grow: 4;
 	background-color: white;
 	border: 3px solid #73AD21;
-	margin: 10px 10px;
+	margin: 30px 30px;
 	padding: 10px;
 }
 .welcomecontentcontainer{
@@ -36,7 +36,7 @@ body{
 
 .newuserform{
 		border: 3px solid #73AD21;
-		margin: 10px 10px;
+		margin: 30px 30px;
 		padding: 10px;
 		background-color: white;
 }

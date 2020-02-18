@@ -6,7 +6,7 @@ header {
 	
 }
 .login {
-	display: block;
+	display: inline-block;
 	float: right;
 	background-color: #C7D4E2;
 	vertical-align: middle;
@@ -17,11 +17,11 @@ header {
 	margin: 10px;
 }
 .logo{
-	display: block;
+	display:inline-block;
 	margin: 15px;
 }
 .title{ 
-	display: block;
+	display: inline-block;
 	font-family:Book Antiqua;
 	font-size: 30px;
 	margin: 10px;

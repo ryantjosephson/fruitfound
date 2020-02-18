@@ -9,7 +9,7 @@
 <body>
 	<?php 
 	include("header.php");
-	incude("footer.php");
+	include("footer.php");
 	?>
 </body>
 </html>

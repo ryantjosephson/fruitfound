@@ -4,6 +4,13 @@ body{
 	padding: 0;
 }
 
+.formcontainer{
+	display:flex;
+}
+
 .indexcontent{
 	display:flex;
+}
+.maincontent{
+	display: flex;
 }

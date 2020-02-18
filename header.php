@@ -1,7 +1,10 @@
 
 <header class="header">
 	<div class="logo">
-	<a href="index.php"><img src="appletree.png" height="100px">FruitFound: Where we help you find free fruit.</a>
+	<a href="index.php"><img src="appletree.png" height="100px"></a>
+	</div>
+	<div class="title">
+		<h1>FruitFound!</h1>
 	</div>
 	<div class="login">
 		<div class="formcontainer">

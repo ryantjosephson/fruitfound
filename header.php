@@ -4,7 +4,7 @@
 	<a href="index.php"><img src="appletree.png" height="100px"></a>
 	</div>
 	<div class="title">
-		<h1>FruitFound!</h1>
+		<h1 class="titletext">FruitFound!</h1>
 	</div>
 	<div class="login">
 		<div class="formcontainer">

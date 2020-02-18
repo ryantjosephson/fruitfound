@@ -8,6 +8,8 @@ body{
 	display:flex;
 	border: 3px solid #73AD21;
 	flex-grow: 1;
+	background-image: url("orchardbackground.jpg");
+	opacity: .5;
 }
 
 .welcomecontent{

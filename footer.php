@@ -1,9 +1,9 @@
 <footer>
-	<div id=footer>
-		<p>
+	<div class="footer">
+		<p class="footerparagraph">
 			Page Created by Ryan Josephson
 		</p>
-		<p>
+		<p class="footerparagraph">
 			ryantjosephson@gmail.com
 		</p>
 	</div>

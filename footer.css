@@ -3,12 +3,11 @@ footer{
 	height: 100px;
 	width: 100%;
 	margin: 0;
-	width: 80%;
-	border: 3px solid #73AD21;
+
 	
 }
-.footerparagraph{
-		width: 80%;
+.footer{
+	width: 80%;
 	border: 3px solid #73AD21;
 	
 }

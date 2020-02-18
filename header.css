@@ -25,7 +25,9 @@ header {
 	font-family:Book Antiqua;
 	font-size: 30px;
 	margin: 10px;
+	justify: top;
 }
 .titletext{
 	margin: 10px;
+	
 }

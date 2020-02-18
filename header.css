@@ -7,7 +7,7 @@ header {
 }
 
 .login {
-	display: flex;
+	display: inline-block;
 	float: right;
 	background-color: #C7D4E2;
 	margin: 30px;
@@ -23,7 +23,7 @@ header {
 .title{ 
 	display: flex;
 	margin: 10px;
-	align: top;
+	margin-top: 30px;
 	float: top;
 	
 }

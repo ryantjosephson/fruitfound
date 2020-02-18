@@ -7,7 +7,7 @@ header {
 }
 
 img {
-	height: 100%;
+	height: auto;
 }
 .login {
 	display: inline-block;

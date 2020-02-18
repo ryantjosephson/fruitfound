@@ -6,11 +6,14 @@ body{
 
 .formcontainer{
 	display:flex;
+	border: 3px solid #73AD21;
 }
 
-.indexcontent{
+.welcomecontent{
 	display:flex;
+	border: 3px solid #73AD21;
 }
 .maincontent{
 	display: flex;
+	border: 3px solid #73AD21;
 }

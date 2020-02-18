@@ -11,21 +11,21 @@
 	<?php 
 	include("header.php");
 	?>
+	<div class="maincontent">
+		<div class="welcomecontent">
+			<p> Some Content</p>
+		</div>
+		<div class="formcontainer">
+			<div class="newuserform">
+				<form method="POST" action="addlocation.php">
+					<div class="newuserdiv"> First Name: <input type="text" id="firstname" name="firstname"> </div>
+					<div class="newuserdiv"> Last Name: <input type="text" id="lastname" name="lastname"> </div>
+					<div class="newuserdiv"> Username: <input type="text" id="username" name="username"> </div>
+					<div class="newuserdiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
+				</form>
 	
-	<div class="indexcontent">
-	<p> Some Content</p>
-	
-	</div>
-	<div class="formcontainer">
-	<div class="newuserform">
-		<form method="POST" action="addlocation.php">
-			<div class="newuserdiv"> First Name: <input type="text" id="firstname" name="firstname"> </div>
-			<div class="newuserdiv"> Last Name: <input type="text" id="lastname" name="lastname"> </div>
-			<div class="newuserdiv"> Username: <input type="text" id="username" name="username"> </div>
-			<div class="newuserdiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
-		</form>
-	
-	</div>
+			</div>
+		</div>
 	</div>
 	
 	<?php

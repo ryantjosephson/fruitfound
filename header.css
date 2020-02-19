@@ -4,6 +4,7 @@ header {
 	margin: 0;
 	vertical-align: middle;
 	display: flex;
+	height: 200px;
 }
 
 img {

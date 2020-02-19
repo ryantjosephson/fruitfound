@@ -28,6 +28,7 @@
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
 					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username"> </div>
 					<div class="newuserdiv"> Password:</br> <input type="text" id="password" name="password"> </div>
+					<div class="submitbutton"><input type="submit"></div>
 				</form>
 	
 			</div>

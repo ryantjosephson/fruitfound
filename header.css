@@ -13,15 +13,15 @@ img {
 	display: inline-block;
 	float: right;
 	background-color: #C7D4E2;
-	margin: 20px;
+	margin: 5px;
 	
 }
 .logindiv{
-	margin: 10px;
+	margin: 5px;
 }
 .logo{
 	display: flex;
-	margin: 15px;
+	margin: 10px;
 	flex-grow: 1;
 }
 .title{ 

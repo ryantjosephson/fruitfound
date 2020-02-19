@@ -17,7 +17,7 @@ h2{
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 30px;
 }
-p.maincontent{
+p{
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 15px;
 }
@@ -41,8 +41,9 @@ p.maincontent{
 	background-image: url("orchardbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding:40px;
-	height:500px;
+	padding: 40px;
+	height: 500px;
+	
 }
 
 .newuserform{

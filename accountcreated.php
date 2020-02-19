@@ -13,6 +13,7 @@
 	?>
 	<div>
 	<p>Congratulations, you're on your way towards helping a neighbor and cleaning up your mess</p>
+	<p>Get started by watching the tutorial vido below or <a href="account.php">manage your account.</a>
 	</div>
 	
 	<?php

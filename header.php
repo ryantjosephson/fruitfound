@@ -13,7 +13,7 @@
 			<h3 id="title">Login</h3>
 				<div class="logindiv"> Username: <input type="text" id="username" name="username"> </div>
 				<div class="logindiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
-				<div class="submitbutton"><input type="submit"></div>
+				<div class="submitbutton"><input type="submit" value="Submit"></div>
 			</form>
 		</div>
 	

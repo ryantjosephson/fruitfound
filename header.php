@@ -9,7 +9,7 @@
 	</div>
 	<div class="login">
 		<div class="formcontainer">
-			<form method="POST" action="accountcreated.php">
+			<form method="POST" action="account.php">
 			<h3 id="title">Login</h3>
 				<div class="logindiv"> Username: <input type="text" id="username" name="username"> </div>
 				<div class="logindiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>

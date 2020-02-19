@@ -23,6 +23,7 @@ p{
 }
 .pagecontainer{
 	margin: 0;
+	padding: 0;
 }
 .welcomecontent{
 	flex-grow: 4;

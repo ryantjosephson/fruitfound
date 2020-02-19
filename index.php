@@ -23,12 +23,12 @@
 		<div class="formcontainer">
 			<div class="newuserform">
 				<h2>Sign up for a free account</h2>
-				<form method="POST" action="addlocation.php">
+				<form method="POST" action="accountcreated.php">
 					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
 					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username"> </div>
 					<div class="newuserdiv"> Password:</br> <input type="text" id="password" name="password"> </div>
-					<div class="submitbutton"><input type="submit" action="accountcreated.php" value="Submit"></div>
+					<div class="submitbutton"><input type="submit"  value="Submit"></div>
 				</form>
 	
 			</div>

@@ -10,6 +10,10 @@
 	<?php 
 	include("header.php");
 	?>
+	<div>
+	<p>Congratulations, you're on your way towards helping a neighbor and cleaning up your mess</p>
+	</div>
+	
 	<?php
 	include("footer.php");
 	?>

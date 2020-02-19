@@ -35,9 +35,9 @@ p{
 }
 .welcomecontentcontainer{
 	display:flex;
-	height: 550px;
+	height: 480px;
 	width: 70%;
-	padding: 15px;
+	padding: 20px;
 
 	
 }

@@ -21,6 +21,9 @@ p{
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 15px;
 }
+.pagecontainer{
+	margin: 0;
+}
 .welcomecontent{
 	flex-grow: 4;
 	background-color: white;

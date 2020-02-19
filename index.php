@@ -7,7 +7,7 @@
 
 	</header>
 <body>
-<div>
+<div class="pagecontainer">
 	<?php 
 	include("header.php");
 	?>

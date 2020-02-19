@@ -12,6 +12,9 @@ img {
 .formcontainer{
 	padding: 0;
 }
+form {
+	padding: 5px;
+}
 .login {
 	display: inline-block;
 	float: right;

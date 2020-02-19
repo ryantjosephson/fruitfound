@@ -14,7 +14,7 @@
 	<div class="maincontent">
 		<div class="welcomecontentcontainer">
 			<div class="welcomecontent">
-			<h2> We're here to help you locate free local fruit and produce.<h2>
+			<h2> We're here to help you locate free local fruit and produce.</h2>
 			<p> FruitFound helps you locate in-season fruit that would otherwise go to waste for a fraction of what it would cost in stores. All you have to do is pick it.</p>
 			<p> You can locate nearby howeowners that have an excess quantity of fruit on their trees that's going to make a mess once it falls.  Of find supplemental feed for your farm animals.
 			<p> If you're a homeowner, post your fruit on our site and save yourself the mess of cleaning up rotten fruit off of the ground. It's a win-win!</p>

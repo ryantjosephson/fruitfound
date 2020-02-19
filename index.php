@@ -21,10 +21,10 @@
 			<div class="newuserform">
 				<h2>Sign up for a free account</h2>
 				<form method="POST" action="addlocation.php">
-					<div class="newuserdiv"> First Name: <input type="text" id="firstname" name="firstname"> </div>
-					<div class="newuserdiv"> Last Name: <input type="text" id="lastname" name="lastname"> </div>
-					<div class="newuserdiv"> Username: <input type="text" id="username" name="username"> </div>
-					<div class="newuserdiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
+					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
+					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
+					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username"> </div>
+					<div class="newuserdiv"> Password:</br> <input type="text" id="password" name="password"> </div>
 				</form>
 	
 			</div>

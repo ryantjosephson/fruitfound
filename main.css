@@ -31,6 +31,7 @@ p.maincontent{
 }
 .welcomecontentcontainer{
 	display:flex;
+	height: 300px;
 	width: 70%;
 
 	

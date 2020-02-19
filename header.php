@@ -2,7 +2,7 @@
 <header class="header">
 
 	<div class="logo">
-	<a href="index.php"><img src="appletree.png"></a>
+	<a href="index.php"><img class="logoimg" src="appletree.png"></a>
 	</div>
 	<div class="title">
 		<h1 class="titletext">FruitFound!</h1>

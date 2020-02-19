@@ -14,6 +14,7 @@
 	<div>
 	<p>Sign in Successful</p>
 	<p> Manage your account below</p>
+	<p> USers will have a table containing the different postings they would want to manage containing location, fruit varieties, contact information, 
 	</div>
 	
 	<?php

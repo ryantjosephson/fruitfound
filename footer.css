@@ -1,8 +1,11 @@
 footer{
 	background-color: lightblue;
 	height: 100px;
-
-
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 10;
+	padding-bottom: 10;
 	margin: 0;
 	
 }
@@ -10,6 +13,7 @@ footer{
 	margin: auto;
 	width: 40%;
 	border: 3px solid #73AD21;
+	padding: 5px;
 	
 }
 .footerparagraph {

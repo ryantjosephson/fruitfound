@@ -19,7 +19,7 @@ img {
 	height: 160px;
 }
 .formcontainer{
-	float: right;
+	display: inline-block;
 	padding: inherit;
 	margin: 0;
 }

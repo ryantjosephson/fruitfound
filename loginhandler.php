@@ -5,9 +5,9 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 	
-	$stmt = $connection->query("SELECT * FROM users WHERE UserName = $_POST['username']");
+//	$stmt = $connection->query("SELECT * FROM users WHERE UserName = ? ");
 //	$stmt->execute([$_POST['username']]);
-	$user = $stmt->fetch();
+//	$user = $stmt->fetch();
 
 if ($user && password_verify($_POST['password'], $user['password'])) {
     $_SESSION['auth'] = true;

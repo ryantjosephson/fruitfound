@@ -1,5 +1,5 @@
 <?php
-//require_once 'KLogger.php';
+require_once ('KLogger.php');
 
 class Dao {
 
@@ -15,7 +15,7 @@ public function __construct() {
 
 public function getConnection() {
     try {
-       $connection = new PDO('mysql:host={$this->host};dbname={$this->dbname}', $this->username, $this->password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'');
+       $connection = new PDO('mysql:host={$this->host};dbname={$this->dbname}', $this->username, $this->password);
     } catch (Exception $e) {
       $this->logger->LogError("Could not connect to the database: " . $e->getMessage());
       return null;

@@ -15,9 +15,13 @@
 	<body>
 		<?php 
 			include("header.php");
-			<h2 id="title">Login</h2>
-
+			
+			if (isset($_SESSION['message'])) {
+				echo "<div id='error'>{$_SESSION['message']}</div>";
+				unset($_SESSION['messsage']);
+			}
 		?>
+		<h2 id="title">Login</h2>
 		<form method="POST" action="loginhandler.php">
 			
 			<div class="formdiv"> <Label for="username">Username: <input type="text" id="username" name="username"> </div>

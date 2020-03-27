@@ -9,6 +9,7 @@ header {
 }
 
 img {
+	float:left;
 	height: 160px;
 }
 .header-right{

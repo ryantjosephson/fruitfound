@@ -13,7 +13,7 @@
 	$pass = filter_var($_POST['password']);
 	$stmt->execute();
 	$useraccount = $connection->query("select * FROM users WHERE UserName = "$user"");
-	
+	print_r($useraccount);
 	
  if ($useraccount['username'] == $user ){
     header("Location: https://fruitfound.herokuapp.com/login.php");

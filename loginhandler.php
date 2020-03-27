@@ -1,7 +1,7 @@
 <?php
 	session_start();
 //	require_once ('dao.php');
-	$connection = new PDO('mysql:host=us-cdbr-iron-east-04.cleardb.net;dbname=heroku_a416b59d1326088', 'b6e186ca6a829b', '80469f78');
+	$connection = new PDO('mysql:host=us-cdbr-iron-east-04.cleardb.net;dbname=heroku_a416b59d1326088;charset=utf8', 'b6e186ca6a829b', '80469f78');
 //	$dao = new Dao();
 //	$connection = $dao->getConnection();
 	

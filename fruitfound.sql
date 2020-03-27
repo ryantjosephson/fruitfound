@@ -9,6 +9,7 @@ CREATE TABLE `users` (
   `UserID` int(30) NOT NULL AUTO_INCREMENT,
   `FirstName` char(20) NOT NULL,
   `LastName` varchar(30) NOT NULL,
+  `UserName` varchar(30) NOT NULL,
   `Password` varchar(30) NOT NULL,
   `DateStamp` datetime NOT NULL,
   PRIMARY KEY (`UserID`)

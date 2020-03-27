@@ -23,26 +23,12 @@ img {
 .header-left{
 	font-family: 'Londrina Solid', cursive;
 	font-size: 40px;
+	float: left;
+	color: green;
+	padding 12px;
 }
 h3 {
 	text-sixe; 20px;
 	margin: 5px;
 }
-.submitbutton{
-	margin:5px;
-}
-.title{ 
-	display: flex;
-	margin: 5px;
-	margin-top: 15px;
 
-	padding: inherit;
-	
-	
-}
-.titletext{
-	font-family:Book Antiqua;
-	font-size: 60px;
-	margin: 10px;
-	
-}

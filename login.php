@@ -25,7 +25,7 @@
 		<form method="POST" action="loginhandler.php">
 			
 			<div class="formdiv"> <Label for="username">Username: <input type="text" id="username" name="username"> </div>
-			<div class="formdiv"> <Label for="password"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
+			<div class="formdiv"> <Label for="password"> Password:&nbsp; <input type="password" id="password" name="password"> </div>
 			<div> <input type="submit" value="Submit"></div>
 		</form>
 		

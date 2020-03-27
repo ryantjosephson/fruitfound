@@ -30,7 +30,7 @@
 				unset($_SESSION['messsage']);
 			}
 		?>
-				<form method="POST" action="signuphandler.php.php">
+				<form method="POST" action="signuphandler.php">
 					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
 					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username"> </div>

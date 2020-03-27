@@ -24,6 +24,14 @@
 		<div class="formcontainer">
 			<div class="newuserform">
 				<h2>Sign up for a free account</h2>
+				<?php 
+			include("header.php");
+			
+			if (isset($_SESSION['message'])) {
+				echo "<div id='error'>{$_SESSION['message']}</div>";
+				unset($_SESSION['messsage']);
+			}
+		?>
 				<form method="POST" action="accountcreated.php">
 					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>

@@ -7,7 +7,6 @@
 	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ? ");
 	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
-	$username = $user["UserName"];
 	$password = $user["Password"];
 
  if ($user && $_POST['password'] = $user['Password']) {

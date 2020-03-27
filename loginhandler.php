@@ -7,13 +7,8 @@
 	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ? ");
 	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
-?>
-<pre>
-<?php 
-print_r ($user);
-?>
 
- if ($user && password_verify($_POST['password'], $user['Password'])) {
+ if ($user && password_verify($_POST['password'], $user[Password])) {
     $_SESSION['auth'] = true;
     header("Location: https://fruitfound.herokuapp.com/index.php");
     exit;

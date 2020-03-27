@@ -1,6 +1,6 @@
   
 <?php
-require_once 'KLogger.php';
+//require_once 'KLogger.php';
 
 class Dao {
 
@@ -10,9 +10,9 @@ class Dao {
   private $password = '80469f78';
   private $logger;
 
-  public function __construct() {
-    $this->logger = new KLogger("log.txt", KLogger::WARN);
-  }
+ // public function __construct() {
+  //  $this->logger = new KLogger("log.txt", KLogger::WARN);
+ // }
 
   public function getConnection() {
     try {

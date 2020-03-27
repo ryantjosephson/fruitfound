@@ -36,7 +36,6 @@ form {
 .logo{
 	display: flex;
 	margin: 10px;
-	flex-grow: 1;
 }
 h3 {
 	text-sixe; 20px;

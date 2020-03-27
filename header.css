@@ -3,6 +3,10 @@ a {
 	font-size: 40px;
 }
 
+h1 {
+	font-family: 'Londrina Solid', cursive;
+}
+
 header {
 	background-color: lightblue;
 	width: 100%;
@@ -15,6 +19,7 @@ img {
 	height: 160px;
 }
 .formcontainer{
+	float: right;
 	padding: inherit;
 	margin: 0;
 }

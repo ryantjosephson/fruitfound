@@ -16,7 +16,7 @@ img {
 	height: 160px;
 	padding: 12px;
 }
-.header-left.header-right{
+.header-left && .header-right{
 	font-family: 'Londrina Solid', cursive;
 	font-size: 40px;
 	color: green;

@@ -16,23 +16,25 @@ img {
 	height: 160px;
 	padding: 12px;
 }
-.header-right{
-	float: right;
-	height: 100%;
-	width: 
-	
-
-}
-.header-left{
+.header-left.header-right{
 	font-family: 'Londrina Solid', cursive;
 	font-size: 40px;
-	float: left;
 	color: green;
 	padding 12px;
+	height: 160px;
+}
+
+.header-right{
+	float: right;
+}
+
+
+.header-left{
+	float: left;
+
 }
 .titletext{
 	float:left;
 	padding: 5px;
-	
 	
 }

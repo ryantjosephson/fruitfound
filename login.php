@@ -17,7 +17,7 @@
 			include("header.php");
 			
 			if (isset($_SESSION['message'])) {
-				echo "<div id='error'>{$_SESSION['message']}</div>";
+				print_r "<pre id='error'>{$_SESSION['message']}</pre>";
 				unset($_SESSION['messsage']);
 			}
 		?>

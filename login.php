@@ -15,12 +15,18 @@
 	<body>
 		<?php 
 			include("header.php");
-		?>
-		<form method="POST" action="accounthandler.php">
-			<h3 id="title">Login</h3>
-			<div class="logindiv"> Username: <input type="text" id="username" name="username"> </div>
-			<div class="logindiv"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
-			<div class="submitbutton"><input type="submit" value="Submit"></div>
+
+		<h3 id="title">Login</h3>
+		if (isset($_SESSION['message'])) {
+			echo "<div id='error'>{$_SESSION['message']}</div>";
+			unset($_SESSION['messsage']);
+    }
+    ?>
+		<form method="POST" action="loginhandler.php">
+			
+			<div class="formdiv"> <Label for="username">Username: <input type="text" id="username" name="username"> </div>
+			<div class="formdiv"> <Label for="password"> Password:&nbsp; <input type="text" id="password" name="password"> </div>
+			<div> <input type="submit" value="Submit"></div>
 		</form>
 		
 		

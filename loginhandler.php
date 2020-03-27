@@ -5,7 +5,7 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 	
-	$stmt = $connection->query("SELECT * FROM users WHERE UserName = '$_POST['username']'");
+	$stmt = $connection->query("SELECT * FROM users WHERE UserName = $_POST['username']");
 //	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
 

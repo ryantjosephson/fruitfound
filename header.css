@@ -18,6 +18,9 @@ img {
 }
 .header-right{
 	float: right;
+	height: 100%;
+	width: 
+	
 
 }
 .header-left{
@@ -30,5 +33,6 @@ img {
 .titletext{
 	float:left;
 	padding: 5px;
+	margin-bottom: 30px;
 	
 }

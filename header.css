@@ -22,6 +22,7 @@ img {
 	display: inline-block;
 	padding: inherit;
 	margin: 0;
+	width:80%;
 }
 form {
 	padding: 5px;

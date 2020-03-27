@@ -4,7 +4,7 @@
 	
 	$connection = new Dao();
 	
-	$stmt = $connection->prepare("SELECT * FROM users WHERE  = ?");
+	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ?");
 	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
 

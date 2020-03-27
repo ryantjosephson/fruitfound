@@ -1,5 +1,6 @@
 a.loginpage { 
 	font-family: 'Londrina Solid', cursive;
+	font-size:35px;
 }
 
 header {
@@ -11,6 +12,7 @@ header {
 img {
 	float:left;
 	height: 160px;
+	padding: 12px;
 }
 .header-right{
 	float: right;
@@ -25,5 +27,6 @@ img {
 }
 .titletext{
 	float:left;
+	padding: 5px;
 	
 }

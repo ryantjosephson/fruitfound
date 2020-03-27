@@ -4,7 +4,7 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 
-	$stmt = $connection->prepare"INSERT INTO Users(FirstName,LastName, UserName, Password) VALUES (?,?,?,?)";
+	$stmt = $connection->prepare("INSERT INTO Users(FirstName,LastName, UserName, Password) VALUES (?,?,?,?)");
 	$stmt->bind_param("ssss", $first, $last, $user, $pass);
 	
 	$first = filter_var($_POST['firstname']);
@@ -12,12 +12,8 @@
 	$user = filter_var($_POST['username']);
 	$pass = filter_var($_POST['password']);
 	$stmt->execute();
-	$useraccount = $stmt->fetch();
+	$useraccount = $connection->query("select * FROM users WHERE UserName = "$user"");
 	
-	
-	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ? ");
-	$stmt->execute([$_POST['username']]);
-	$user = $stmt->fetch();
 	
  if ($useraccount['username'] == $user ){
     header("Location: https://fruitfound.herokuapp.com/login.php");

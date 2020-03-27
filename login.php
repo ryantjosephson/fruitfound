@@ -15,11 +15,8 @@
 	<body>
 		<?php 
 			include("header.php");
-			<h3 id="title">Login</h3>
-			if (isset($_SESSION['message'])) {
-				echo "<div id='error'>{$_SESSION['message']}</div>";
-				unset($_SESSION['messsage']);
-			}
+			<h2 id="title">Login</h2>
+
 		?>
 		<form method="POST" action="loginhandler.php">
 			

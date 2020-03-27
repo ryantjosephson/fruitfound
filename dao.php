@@ -15,7 +15,7 @@ public function __construct() {
 
 public function getConnection() {
     try {
-       $connection = new PDO('mysql:host={$this->host};dbname={$this->dbname}', $this->username, $this->password);
+       $connection = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->username, $this->password);
     } catch (Exception $e) {
       $this->logger->LogError("Could not connect to the database: " . $e->getMessage());
       return null;

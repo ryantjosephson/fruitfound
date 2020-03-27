@@ -1,9 +1,9 @@
 <?php
 	session_start();
-	require_once 'dao.php';
+//	require_once 'dao.php';
 	
-	$dao = new Dao();
-	$connection = $dao->getConnection();
+//	$dao = new Dao();
+//	$connection = $dao->getConnection();
 	
 //	$stmt = $connection->query("SELECT * FROM users WHERE UserName = ? ");
 //	$stmt->execute([$_POST['username']]);

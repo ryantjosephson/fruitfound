@@ -15,7 +15,7 @@ img {
 	height: 160px;
 }
 .formcontainer{
-	padding: 0;
+	padding: inherit;
 	margin: 0;
 }
 form {
@@ -51,6 +51,7 @@ h3 {
 	margin-top: 15px;
 	float: top;
 	flex-grow: 3;
+	padding: inherit;
 	
 	
 }

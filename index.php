@@ -1,6 +1,6 @@
 <html>
 	<header>
-	<title>Hello World</title>
+	<title>FruitFound</title>
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">

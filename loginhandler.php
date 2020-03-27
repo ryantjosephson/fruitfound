@@ -2,7 +2,8 @@
   session_start();
 	require_once 'dao.php';
 	
-	$connection = new Dao();
+	$dao = new Dao();
+	$connection = dao->getConnection();
 	
 	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ?");
 	$stmt->execute([$_POST['username']]);

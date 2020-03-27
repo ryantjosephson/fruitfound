@@ -25,8 +25,6 @@
 			<div class="newuserform">
 				<h2>Sign up for a free account</h2>
 				<?php 
-			include("header.php");
-			
 			if (isset($_SESSION['message'])) {
 				echo "<div id='error'>{$_SESSION['message']}</div>";
 				unset($_SESSION['messsage']);

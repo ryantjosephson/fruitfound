@@ -13,3 +13,4 @@
     $_SESSION['message'] = "Invalid username or password";
     header("Location: https://fruitfound.herokuapp.com/login.php");
   }
+  ?>

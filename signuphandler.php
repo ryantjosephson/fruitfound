@@ -26,5 +26,6 @@
     $_SESSION['auth'] = false;
     $_SESSION['message'] = "Account Creation Failed, please try again";
     header("Location: https://fruitfound.herokuapp.com/index.php");
+	exit;
 }
   ?> 

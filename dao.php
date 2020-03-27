@@ -22,4 +22,5 @@ public function getConnection() {
     }
     return $connection;
   }
+}
   ?>

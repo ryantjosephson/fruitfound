@@ -6,7 +6,7 @@
 
   if ($username == $_POST['username'] && $password == $_POST['password']) {
     $_SESSION['auth'] = true;
-    header("Location: https://fruitfound.herokuapp.com/index.php);
+    header("Location: https://fruitfound.herokuapp.com/index.php");
     exit;
   } else {
     $_SESSION['auth'] = false;

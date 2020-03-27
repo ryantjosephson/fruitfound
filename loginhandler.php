@@ -7,7 +7,10 @@
 	$stmt = $connection->prepare("SELECT * FROM users WHERE UserName = ? ");
 	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
-	print_r ("<pre>{$user}</pre>)";
+	?>
+	<pre>
+	<?php
+	print_r($user)?></pre>
 	
 
 /* if ($user && password_verify($_POST['password'], $user['password'])) {

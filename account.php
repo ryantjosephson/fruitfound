@@ -5,6 +5,9 @@ session_start();
     header("Location: http://cs401/login.php");
     exit;
   }
+  
+  require_once 'dao.php';
+  $dao = new Dao();
 ?>
 
 <html>

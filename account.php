@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+  if (!isset($_SESSION['auth']) || !$_SESSION['auth'])  {
+    header("Location: http://cs401/login.php");
+    exit;
+  }
+?>
+
 <html>
 	<header>
 	<title>Hello World</title>
@@ -13,11 +22,35 @@
 	?>
 	<div>
 	<p>Sign in Successful</p>
-	<p> Manage your account below</p>
-	<p> USers will have a table containing the different postings they would want to manage containing location, fruit varieties, contact information, 
+	<p> Manage your account below</p> 
 	</div>
-	
-	<?php
+	 <table>
+		<thead>
+			<tr>
+				<th>Location</th>
+				<th>Street</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Zip</th>
+				<th>Phone</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php
+		    $lines = $dao->getLocations();
+			if (is_null($lines)) {
+			echo "There was an error.";
+			} else {
+				foreach ($lines as $line) {
+				echo "<tr><td>{$line['LocationName']}/></td><td> {$line['Street']}</td><td>{$line['city']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td><td class='edit'><a href='edit_location.php?id={$line['LocationID']}'>X</a></td></tr>";
+				}
+			}
+		?>
+		</tbody>
+	</table>
+<?php	
 	include("footer.php");
 	?>
 	</body>

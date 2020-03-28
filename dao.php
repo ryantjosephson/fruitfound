@@ -23,4 +23,17 @@ public function getConnection() {
     return $connection;
   }
 }
+
+public function getLocations() {
+	$conn = $this->getConnection();
+	if(is_null($conn)){
+		return;
+	}
+	try {
+		return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings sorted by LocationName");
+	} catch(Exception $e) {
+		echo print_r ($e,1);
+		exit;
+	}
+}
   ?>

@@ -13,13 +13,13 @@
 		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
 		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
 		
-		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
-		$stmt = $connection->prepare($sql);
+//		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
+//		$stmt = $connection->prepare($sql);
 		
 //		$stmt->bindValue(':username', $username);
 //		$stmt->execute();
 //		$row = $stmt->fetchPDO::FETCH_ASSOC);
-		
+	}
 		if($row['num']>0){
 			$_SESSION['auth'] = true;
 			$_SESSION['message'] = "Nice Work";
@@ -31,7 +31,7 @@
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
 		}
-	}
+	
 	
 	
 	

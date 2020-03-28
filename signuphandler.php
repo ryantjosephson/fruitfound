@@ -8,8 +8,12 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 
-	$stmt = $connection->prepare("INSERT INTO Users(FirstName,LastName, UserName, Password) VALUES (?,?,?,?)");
-	$stmt->bind_param("ssss", $first, $last, $user, $pass);
+	$stmt = $connection->prepare("INSERT INTO Users(FirstName,LastName, UserName, Password) 
+	VALUES (:firstname, :lastname, :username, :password)");
+	$stmt->bind_param(':firstname', $first);
+	$stmt->bind_param(':lastname', $last);
+	$stmt->bind_param(':username', $user);
+	$stmt->bind_param(':password', $pass);
 	
 	$first = filter_var($_POST['firstname']);
 	$last = filter_var($_POST['lastname']);

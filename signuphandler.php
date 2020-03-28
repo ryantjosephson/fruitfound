@@ -26,7 +26,7 @@
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
 		}
-		
+	}
 	
 	
 	

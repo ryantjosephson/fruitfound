@@ -1,3 +1,7 @@
+<html>
+<head></head>
+<body>
+<pre>
 <?php
 	session_start();
 	require_once ('dao.php');
@@ -25,3 +29,6 @@
 	exit;
 }
   ?> 
+  </pre>
+  </body>
+  </html>

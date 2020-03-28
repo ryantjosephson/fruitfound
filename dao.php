@@ -30,7 +30,7 @@ public function getLocations() {
 		return;
 		}
 	try {
-		return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings");
+	return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE userID = {$_SESSION['userID']}");
 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;

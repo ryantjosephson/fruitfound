@@ -10,7 +10,7 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 	
-	if(isset($_POST['LocationName'])){
+	if(isset($_POST['locationname'])){
 		
 	$location = $_POST['locationname']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
 	$street = $_POST['street']; //!empty($_POST['lastname']) ? trim($_POST['lastname'] : null;	

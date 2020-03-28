@@ -11,7 +11,7 @@
 
  if ($user && $_POST['password'] = $user['Password']) {
     $_SESSION['auth'] = true;
-    header("Location: https://fruitfound.herokuapp.com/index.php");
+    header("Location: https://fruitfound.herokuapp.com/account.php");
     exit;
 } else {
     $_SESSION['auth'] = false;

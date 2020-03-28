@@ -10,8 +10,8 @@
 	
 	if(isset($_POST['submit'])){
 		
-		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
-		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
+//		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
+//		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
 		
 //		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
 //		$stmt = $connection->prepare($sql);
@@ -20,17 +20,17 @@
 //		$stmt->execute();
 //		$row = $stmt->fetchPDO::FETCH_ASSOC);
 	}
-		if($row['num']>0){
+		//if($row['num']>0){
 			$_SESSION['auth'] = true;
 			$_SESSION['message'] = "Nice Work";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
-		}else{
+		//}else{
 			$_SESSION['auth'] = false;
 			$_SESSION['message'] = "Account Creation Failed, please try again";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
-		}
+		//}
 	
 	
 	

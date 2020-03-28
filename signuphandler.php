@@ -13,7 +13,7 @@
 		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
 		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
 		
-		$sql = "SELECT COUNT(username) AS num from users WHERE UserName = :username";
+		$sql = "SELECT COUNT(UserName) AS num from users WHERE UserName = :username";
 		$stmt = $connection->prepare($sql);
 		
 		$stmt->bindValue(':username', $username);

@@ -6,7 +6,7 @@
 	
 	if(isset($_POST['locationname'])){
 	
-	$locationid = $_GET['id']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
+	$locationid = $_POST['locationid']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
 	$location = $_POST['locationname']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
 	$street = $_POST['street']; //!empty($_POST['lastname']) ? trim($_POST['lastname'] : null;	
 	$city = $_POST['city'];//!empty($_POST['username']) ? trim($_POST['username'] : null;
@@ -25,9 +25,10 @@
 	$stmt->bindParam(":phone, $phone");
 	$stmt->bindParam(":locationid, $locationid");
 	execute();
-	}	
-			$_SESSION['message'] = "Location has been updated.";
-			header("Location: https://fruitfound.herokuapp.com/account.php");
-			exit;
+	}else {
+		$_SESSION['message'] = "Location has not been updated.";
+		header("Location: https://fruitfound.herokuapp.com/account.php");
+		exit;
+	}
 
   ?> 

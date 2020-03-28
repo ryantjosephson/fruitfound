@@ -21,7 +21,7 @@
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 	}
 		if($row['num']>0){
-			$_SESSION['message'] = "There is a duplicate Account{$row['num']}";
+			$_SESSION['message'] = "There is a duplicate Account";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;	
 		}

@@ -24,16 +24,10 @@
 	$stmt->bindParam(":zip, $zip");
 	$stmt->bindParam(":phone, $phone");
 	$stmt->bindParam(":locationid, $locationid");
-	$result = $stmt->execute();
+	execute();
 	}	
-		if($result){ 
 			$_SESSION['message'] = "Location has been updated.";
 			header("Location: https://fruitfound.herokuapp.com/account.php");
 			exit;
-		}else{
-			$_SESSION['message'] = "Error found, location not updated.";
-			header("Location: https://fruitfound.herokuapp.com/account.php");
-			exit;
-		}
 
   ?> 

@@ -15,9 +15,9 @@
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	
 	
-	$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
+	$sql = "UPDATE  userlistings SET LocationName = "crazy town", Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
 	$stmt = $connection->prepare($sql);
-	$stmt->bindParam(":location, $location");
+	//$stmt->bindParam(":location, $location");
 	$stmt->bindParam(":street, $street");
 	$stmt->bindParam(":city, $city");
 	$stmt->bindParam(":state, $state");

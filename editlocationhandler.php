@@ -19,9 +19,15 @@
 	$zip = $_POST['zip']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	
-	$sql = "UPDATE  userlistings SET LocationName = {$location}, Street = {$street}, City = {$city}, State = {$state}, Zip = {$zip}, Phone = {$phone}"; 
-		$stmt = $connection->prepare($sql);
-		$result = $stmt->execute();
+	$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone"; 
+	$stmt = $connection->prepare($sql);
+	$stmt->bindParam(":location, $location");
+	$stmt->bindParam(":street, $street");
+	$stmt->bindParam(":city, $city");
+	$stmt->bindParam(":state, $state");
+	$stmt->bindParam(":zip, $zip");
+	$stmt->bindParam(":phone, $phone");
+	$result = $stmt->execute();
 	}	
 		if($result){ 
 			$_SESSION['message'] = "Location has been updated.";

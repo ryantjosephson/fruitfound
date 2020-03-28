@@ -28,13 +28,13 @@ session_start();
 	<div>
 	<p>Edit your Location</p>
 	</div>
- 		 <form method="POST" action="editlocationhandler">
-			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo {$location['LocationName']}?>"> </div>
-			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php//$location['Street']?>"> </div>
-			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php//$location['City']?>"> </div>
-			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php//$location['State']?>"> </div>
-			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="<?php//$location['Zip']?>"> </div>
-			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php//$location['Phone']?>"> </div>
+ 		 <form method="POST" action="editlocationhandler.php">
+			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"> </div>
+			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php echo $location['Street'];?>"> </div>
+			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php echo$location['City'];?>"> </div>
+			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php echo$location['State'];?>"> </div>
+			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="<?php echo$location['Zip'];?>"> </div>
+			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php echo $location['Phone'];?>"> </div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
 	

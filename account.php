@@ -32,7 +32,7 @@ session_start();
 	<p>Sign in Successful</p>
 	<p> Manage your account below</p> 
 	
-	<a href="addlocation.php"> 
+	<a href="addlocation.php"> Add a new Location </a>
 	</div>
 	 <table>
 		<thead>

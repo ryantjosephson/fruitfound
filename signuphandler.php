@@ -13,7 +13,7 @@
 	$user = filter_var($_POST['username']);
 	$pass = filter_var($_POST['password']);
 	
-	$stmt = $connection->prepare("INSERT INTO Users(FirstName,LastName, UserName, Password) VALUES (?,?,?,?)");
+	$stmt = $connection->prepare("INSERT INTO users(FirstName, LastName, UserName, Password) VALUES (?,?,?,?)");
 	$stmt->execute([$first, $last, $user, $pass]);
 	
 	$useraccount = $connection->query("select * FROM users WHERE UserName = "$user"");

@@ -14,8 +14,8 @@
 	$zip = $_POST['zip']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	
-	
-	$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
+	$connection->query("UPDATE  userlistings SET LocationName = $locationid, Street = $street, City = $city, State = $state, Zip = $zip, Phone = $phone WHERE LocationID = $locationid"); 
+/* 	$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
 	$stmt = $connection->prepare($sql);
 	$stmt->bindParam(":location, 'Crazyville'");
 	$stmt->bindParam(":street, $street");
@@ -24,7 +24,7 @@
 	$stmt->bindParam(":zip, $zip");
 	$stmt->bindParam(":phone, $phone");
 	$stmt->bindParam(":locationid, $locationid");
-	$stmt->execute();
+	$stmt->execute(); */
 	$_SESSION['message'] = "Location has been updated.";
 	header("Location: https://fruitfound.herokuapp.com/account.php");
 	exit;

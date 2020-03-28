@@ -1,0 +1,1 @@
+sovrn.ads.renderAd({"w":300,"h":250,"iid":"13410076","cb":"95870748","dv":0,"geo":0,"rl":1,"gdprApplies":0,"ccpaApplies":0,"tid":"a_662030_732fdcca4e6c4c078e7d972256d77f48"});

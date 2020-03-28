@@ -12,7 +12,7 @@ session_start();
 
 <html>
 	<header>
-	<title>Hello World</title>
+	<title>FruitFound</title>
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">
@@ -23,20 +23,20 @@ session_start();
 	<?php 
 	include("header.php");
 	
-	//$location = $dao->getLocation($_GET['id']);
+	$location = $dao->getLocation($_GET['id']);
 	?>
 	<div>
 	<p>Edit your Location</p>
 	</div>
-		<form method="POST" action="editlocationhandler">
-			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php$location['LocationName']?>"> </div>
-			<div class="newuserdiv"> Street</br><input type="text" id="street" name="street" value="<?php$location['Street']?>"> </div>
-			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php$location['City']?>"> </div>
-			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php$location['State']?>"> </div>
-			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="<?php$location['Zip']?>"> </div>
-			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php$location['Phone']?>"> </div>
+ 		 <form method="POST" action="editlocationhandler">
+			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php//$location['LocationName']?>"> </div>
+			<div class="newuserdiv"> Street</br><input type="text" id="street" name="street" value="<?php//$location['Street']?>"> </div>
+			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php//$location['City']?>"> </div>
+			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php//$location['State']?>"> </div>
+			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="<?php//$location['Zip']?>"> </div>
+			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php//$location['Phone']?>"> </div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
-		</form>
+		</form>  
 	
 	<div>
 	 <table>

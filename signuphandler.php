@@ -16,7 +16,7 @@
 		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
 		$stmt = $connection->prepare($sql);
 		
-		$stmt->bindValue(':username', $username);
+		$stmt->bindValue(':username', $user);
 		$stmt->execute();
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 	}

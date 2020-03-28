@@ -8,10 +8,10 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 	
-	if(isset($_POST['submit'])){
+	if(isset($_POST['username'])){
 		
-//		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
-//		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
+		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
+		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
 		
 //		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
 //		$stmt = $connection->prepare($sql);

@@ -36,5 +36,18 @@ public function getLocations() {
 		exit;
 	}
 }
+
+public function getLocation($ID) {
+	$conn = $this->getConnection();
+	if(is_null($conn)){
+		return;
+		}
+	try {
+	return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID = {$ID}");
+	} catch(Exception $e) {
+		echo print_r ($e,1);
+		exit;
+	}
+}
 }
   ?>

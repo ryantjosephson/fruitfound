@@ -1,0 +1,73 @@
+<?php
+session_start();
+
+  if (!isset($_SESSION['auth']) || !$_SESSION['auth'])  {
+    header("Location: http://cs401/login.php");
+    exit;
+  }
+  
+  require_once 'dao.php';
+  $dao = new Dao();
+?>
+
+<html>
+	<header>
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+
+	</header>
+	<body>
+	<div class="pagecontainer">
+	<?php 
+	include("header.php");
+	
+	$location = $dao->getLocation({$_GET['LocationID']});
+	?>
+	<div>
+	<p>Edit your Location</p>
+	</div>
+		<form method="POST" action="editlocationhandler">
+			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="$location['LocationName']"> </div>
+			<div class="newuserdiv"> Street</br><input type="text" id="street" name="street" value="$location['Street']"> </div>
+			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="$location['City']"> </div>
+			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="$location['State']"> </div>
+			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="$location['Zip']"> </div>
+			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="$location['Phone']"> </div>
+			<div class="submitbutton"><input type="submit"  value="Submit"></div>
+		</form>
+	
+	<div>
+	 <table>
+		<thead>
+			<tr>
+				<th>Location</th>
+				<th>Street</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Zip</th>
+				<th>Phone</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php
+		    $lines = $dao->getLocations();
+			if (is_null($lines)) {
+			echo "There was an error.";
+			} else {
+				foreach ($lines as $line) {
+				echo "<tr><td>".$line['LocationName']."</td></tr><td>{$line['Street']}</td><td>{$line['city']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td><td class='edit'><a href='edit_location.php?id={$line['LocationID']}'>X</a></td></tr>";
+				}
+			}
+		?>
+		</tbody>
+	</table>
+	</div>
+<?php	
+	include("footer.php");
+	?>
+	</body>
+</html>

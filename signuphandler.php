@@ -30,7 +30,7 @@
 		}
 		
 		$passwordhash = hash("sha256", "pass" . "fKd93Vmz!k*dAv5029Vkf9$3Aa")
-		
+	/* 	
 		$sql = "INSERT INTO users (FirstName, LastName, UserName, Password) VALUES (:firstname, :lastname, :username, :password)";
 		$stmt = $connection->prepare($sql);
 		$stmt->bindValue(':firstname', $first);
@@ -40,15 +40,15 @@
 		
 		$result = $stmt->execute();
 		
-		if($result){
+		if($result){ */
 			$_Session['message'] = "Account Created, please sign in";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
-		}else{
+//		}else{
 			$_SESSION['message'] = "Account Creation Failed, please try again";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
-		}
+//		}
 
   ?> 
   </pre>

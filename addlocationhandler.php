@@ -12,7 +12,7 @@
 	$state = $_POST['state']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 	$zip = $_POST['zip']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
-	$userid= $_SESSION['userid'];
+	$userid= $_SESSION['userID'];
 
 	$sql = "INSERT INTO userlistings (LocationName, Street, City, State, Zip, Phone) VALUES (:location, :street, :city, :state, :zip, :phone) WHERE UserID = :userid"; 
 	$stmt = $connection->prepare($sql);

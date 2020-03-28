@@ -10,8 +10,8 @@
 	
 	if(isset($_POST['username'])){
 		
-		$user = !empty($_POST['username']) ? trim($_POST['username'] : null;
-		$pass = !empty($_POST['password']) ? trim($_POST['password'] : null;
+	$user = $_POST['username'];//!empty($_POST['username']) ? trim($_POST['username'] : null;
+	$pass = $_POST['password']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 		
 //		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
 //		$stmt = $connection->prepare($sql);

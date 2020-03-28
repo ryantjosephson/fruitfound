@@ -17,12 +17,12 @@
 		$stmt = $connection->prepare($sql);
 		
 		$stmt->bindValue(':username', $username);
-//		$stmt->execute();
-//		$row = $stmt->fetchPDO::FETCH_ASSOC);
+		$stmt->execute();
+		$row = $stmt->fetchPDO::FETCH_ASSOC);
 	}
 		//if($row['num']>0){
-			$_SESSION['auth'] = true;
-			$_SESSION['message'] = "Nice Work";
+			$_SESSION['auth'] = false;
+			$_SESSION['message'] = "There is a duplicate Account";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
 		//}else{

@@ -2,7 +2,7 @@
 session_start();
 
   if (!isset($_SESSION['auth']) || !$_SESSION['auth'])  {
-    header("Location: http://cs401/login.php");
+    header("Location: https://fruitfound.herokuapp.com/login.php");
     exit;
   }
   
@@ -32,7 +32,7 @@ session_start();
 	<p>Sign in Successful</p>
 	<p> Manage your account below</p> 
 	
-	
+	<a href="addlocation.php"> 
 	</div>
 	 <table>
 		<thead>

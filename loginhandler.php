@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	
+	$_SESSION['auth'] = false;
+	$_SESSION['userID'] = null;
 	require_once ('dao.php');
 	$dao = new Dao();
 	$connection = $dao->getConnection();

@@ -21,8 +21,8 @@
 //		$row = $stmt->fetchPDO::FETCH_ASSOC);
 		
 		if($row['num']>0){
-			$_SESSION['auth'] = false;
-			$_SESSION['message'] = "That user already exists";
+			$_SESSION['auth'] = true;
+			$_SESSION['message'] = "Nice Work";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
 		}else{

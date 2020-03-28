@@ -41,7 +41,7 @@
 		$result = $stmt->execute();
 		
 		if($result){ 
-			$_Session['message'] = "Account Created, please sign in";
+			$_SESSION['message'] = "Account Created, please sign in";
 			header("Location: https://fruitfound.herokuapp.com/index.php");
 			exit;
 		}else{

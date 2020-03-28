@@ -14,7 +14,7 @@
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	$userid= $_SESSION['userid'];
 
-	$sql = "INSERT INTO userlistings LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE UserID = :userid"; 
+	$sql = "INSERT INTO userlistings (LocationName, Street, City, State, Zip, Phone) VALUES (:location, :street, :city, :state, :zip, :phone) WHERE UserID = :userid"; 
 	$stmt = $connection->prepare($sql);
 	$stmt->bindParam(":location", $location);
 	$stmt->bindParam(":street", $street);

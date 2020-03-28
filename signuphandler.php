@@ -18,7 +18,7 @@
 		
 		$stmt->bindValue(':username', $username);
 		$stmt->execute();
-		$row = $stmt->(fetchPDO::FETCH_ASSOC);
+//		$row = $stmt->(fetchPDO::FETCH_ASSOC);
 	}
 		//if($row['num']>0){
 			$_SESSION['auth'] = false;

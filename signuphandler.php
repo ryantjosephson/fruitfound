@@ -16,10 +16,9 @@
 	$stmt = $connection->prepare("INSERT INTO users(FirstName, LastName, UserName, Password) VALUES (?,?,?,?)");
 	$stmt->execute([$first, $last, $user, $pass]);
 	
-//	$useraccount = $connection->query("select * FROM users WHERE UserName = "$user"");
-//	print_r($useraccount); 
+	$useraccount = $connection->query("select * FROM users WHERE UserName = "$user"");
 	
- if ($useraccount['UserName'] == $user ){
+ if ($useraccount['UserName'] = $user ){
     header("Location: https://fruitfound.herokuapp.com/login.php");
     exit;
 } else {

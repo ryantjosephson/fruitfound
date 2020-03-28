@@ -29,7 +29,7 @@
 			exit;	
 		}
 		
-		$passwordhash = hash("sha256", "pass" . "fKd93Vmz!k*dAv5029Vkf9$3Aa")
+		$passwordhash = hash("sha256", $pass . "fKd93Vmz!k*dAv5029Vkf9$3Aa");
 	/* 	
 		$sql = "INSERT INTO users (FirstName, LastName, UserName, Password) VALUES (:firstname, :lastname, :username, :password)";
 		$stmt = $connection->prepare($sql);

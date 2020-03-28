@@ -25,6 +25,9 @@
 	$stmt->bindParam(":phone, $phone");
 	$stmt->bindParam(":locationid, $locationid");
 	execute();
+	$_SESSION['message'] = "Location has been updated.";
+	header("Location: https://fruitfound.herokuapp.com/account.php");
+	exit;
 	}else {
 		$_SESSION['message'] = "Location has not been updated.";
 		header("Location: https://fruitfound.herokuapp.com/account.php");

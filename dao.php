@@ -24,7 +24,7 @@ public function getConnection() {
   }
 }
 
-public function getLocations() {
+/* public function getLocations() {
 	$conn = $this->getConnection();
 	if(is_null($conn)){
 		return;
@@ -36,4 +36,4 @@ public function getLocations() {
 		exit;
 	}
 }
-  ?>
+  ?> */

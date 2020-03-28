@@ -29,12 +29,12 @@ public function getLocations() {
 	if(is_null($conn)){
 		return;
 		}
-//	try {
+	try {
 		return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings");
-//	} catch(Exception $e) {
-//		echo print_r ($e,1);
-//		exit;
-//	}
+	} catch(Exception $e) {
+		echo print_r ($e,1);
+		exit;
+	}
 }
 }
   ?>

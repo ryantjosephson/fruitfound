@@ -22,10 +22,17 @@ session_start();
 	<div class="pagecontainer">
 	<?php 
 	include("header.php");
+	
+	if (isset($_SESSION['message'])) {
+		echo "<div id='error'>{$_SESSION['message']}</div>";
+		unset($_SESSION['messsage']);
+	}
 	?>
 	<div>
 	<p>Sign in Successful</p>
 	<p> Manage your account below</p> 
+	
+	
 	</div>
 	 <table>
 		<thead>

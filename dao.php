@@ -24,10 +24,10 @@ public function getConnection() {
   }
 }
 
-/* public function getLocations() {
+public function getLocations() {
 	$conn = $this->getConnection();
-	if(is_null($conn)){
-		return;
+//	if(is_null($conn)){
+//		return;
 	}
 	try {
 		return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings sorted by LocationName");
@@ -36,4 +36,4 @@ public function getConnection() {
 		exit;
 	}
 }
-  ?> */
+  ?>

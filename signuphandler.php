@@ -17,7 +17,7 @@
 		$pass = filter_var($_POST['password']);
 	
 		$stmt = $connection->prepare("INSERT INTO users(FirstName, LastName, UserName, Password) VALUES (?,?,?,?)");
-		if($stmt->execute([$first, $last, $user, $pass]);){
+		if($stmt->execute([$first, $last, $user, $pass])){
 		header("Location: https://fruitfound.herokuapp.com/login.php");
 		exit;
 		}else{

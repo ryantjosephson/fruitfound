@@ -13,10 +13,10 @@
 	$user = $_POST['username'];//!empty($_POST['username']) ? trim($_POST['username'] : null;
 	$pass = $_POST['password']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 		
-//		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
-//		$stmt = $connection->prepare($sql);
+		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";
+		$stmt = $connection->prepare($sql);
 		
-//		$stmt->bindValue(':username', $username);
+		$stmt->bindValue(':username', $username);
 //		$stmt->execute();
 //		$row = $stmt->fetchPDO::FETCH_ASSOC);
 	}

@@ -1,10 +1,4 @@
 <?php
-
-<html>
-<head></head>
-<body>
-<pre>
-<?php
 	session_start();
 	require_once ('dao.php');
 	$dao = new Dao();
@@ -40,6 +34,3 @@
 		}
 
   ?> 
-  </pre>
-  </body>
-  </html>

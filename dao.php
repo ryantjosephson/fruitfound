@@ -55,7 +55,6 @@ public function getLocation($ID) {
 }
 
   public function editLocation($id, $location, $street, $city, $state, $zip, $phone) {
-		session_start();
 		$conn = $this->getConnection();
  	if(is_null($conn)){
 		return;

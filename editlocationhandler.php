@@ -15,7 +15,7 @@
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	
 	$dao->$editLocation($_POST['locationid'],$_POST['locationname'],$_POST['street'],$_POST['city'],$_POST['state'],$_POST['zip'],$_POST['phone']);
-	/* $sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
+	$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
 	$stmt = $connection->prepare($sql);
 	$stmt->bindParam(":location", $location);
 	$stmt->bindParam(":street", $street);
@@ -24,7 +24,7 @@
 	$stmt->bindParam(":zip", $zip);
 	$stmt->bindParam(":phone", $phone);
 	$stmt->bindParam(":locationid", $locationid);
-	$stmt->execute(); */
+	$stmt->execute(); 
 	$_SESSION['message'] = "Location has been updated.";
 	header("Location: https://fruitfound.herokuapp.com/account.php");
 	exit;

@@ -54,7 +54,7 @@ public function getLocation($ID) {
 	}
 }
 
-  public Function updateLocation ($id, $locationname,$street,$city,$state,$zip, $phone ) {
+  public Function updateLocation ($id, $location,$street,$city,$state,$zip, $phone ) {
 	  	$conn = $this->getConnection();
 	if(is_null($conn)){
 		return;
@@ -68,7 +68,7 @@ public function getLocation($ID) {
 		$stmt->bindParam(":state", $state);
 		$stmt->bindParam(":zip", $zip);
 		$stmt->bindParam(":phone", $phone);
-		$stmt->bindParam(":locationid", $locationid);
+		$stmt->bindParam(":locationid", $id);
 		$stmt->execute();
 		$_SESSION['message'] = "Location has been updated.";
 	return $loc;

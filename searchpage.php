@@ -18,7 +18,7 @@
 	?>
 	<div>
 	<p>Enter your zipcode and search for fruit.  Results will post below.</p>
-	<form method="POST" action="searchpage.php">	
+	<form method="GET" action="searchpage.php">	
 		<div class="formdiv"> <Label for="zip">ZipCode: <input type="zipcode" id="zip" name="zip"> </div>
 		<div> <input type="submit" value="Submit"></div>
 	</form>
@@ -36,8 +36,8 @@
 		</thead>
 		<tbody>
 		<?php
-	 		if(isset($_POST['zip'])){
-				$lines = $dao->search();
+	 		if(isset($_GET['zip'])){
+				$lines = $dao->search($_GET['zip']);
 				if (is_null($lines)) {
 				echo "There was an error.";
 			} else {

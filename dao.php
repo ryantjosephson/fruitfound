@@ -23,7 +23,7 @@ public function getConnection() {
     return $connection;
   }
 
-
+//returns list of locations associated with a user
 public function getLocations() {
 	$conn = $this->getConnection();
 	if(is_null($conn)){
@@ -37,6 +37,21 @@ public function getLocations() {
 	}
 }
 
+//returns locations matching zip codes.
+public function getLocations($zip) {
+	$conn = $this->getConnection();
+	if(is_null($conn)){
+		return;
+		}
+	try {
+	return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE zip = $zip");
+	} catch(Exception $e) {
+		echo print_r ($e,1);
+		exit;
+	}
+}
+
+//returns single location for editing purposes.
 public function getLocation($ID) {
 	$conn = $this->getConnection();
 	if(is_null($conn)){

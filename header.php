@@ -12,7 +12,7 @@
 	<div>
 		<?php
 		if($_SESSION['auth']=true){
-		print "<a class="loginpage" href="login.php">Login</a>";
+		print "<a class='loginpage' href='login.php'>Login</a>";
 		}?>
 	</div>
 	<div>

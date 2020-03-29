@@ -54,6 +54,9 @@ public function getLocation($ID) {
 	}
 }
 
+
+//I can't get this function to work, I have it working in the editlocationhandler, but am unsure as to why when I copy the code here that it won't work.
+//Any suggestions?
   public function editLocation($id, $location, $street, $city, $state, $zip, $phone) {
 		$conn = $this->getConnection();
  	if(is_null($conn)){

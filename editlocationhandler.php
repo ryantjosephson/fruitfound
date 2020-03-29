@@ -14,7 +14,7 @@
 	$zip = $_POST['zip']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
 	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
 	
-	$dao->$updateLocation($_POST['locationid'],$_POST['locationname'],$_POST['street'],$_POST['city'],$_POST['state'],$_POST['zip'],$_POST['phone']);
+	$dao->$editLocation($_POST['locationid'],$_POST['locationname'],$_POST['street'],$_POST['city'],$_POST['state'],$_POST['zip'],$_POST['phone']);
 	/* $sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
 	$stmt = $connection->prepare($sql);
 	$stmt->bindParam(":location", $location);

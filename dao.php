@@ -54,7 +54,7 @@ public function getLocation($ID) {
 	}
 }
 
-  public function editLocation($id, $l, $s, $c, $st, $z, $p) {
+  public function editLocation($id, $location, $street, $city, $state, $zip, $phone) {
 		$conn = $this->getConnection();
  	if(is_null($conn)){
 		return;
@@ -63,12 +63,12 @@ public function getLocation($ID) {
 		$sql = "UPDATE userlistings SET LocationName =:location, Street =:street, City =:city, State =:state, Zip =:zip, Phone =:phone WHERE LocationID =:locationid"; 
 		$stmt = $conn->prepare($sql);
 		$stmt->bindParam(":locationid", $id);
-		$stmt->bindParam(":location", $l);
-		$stmt->bindParam(":street", $s);
-		$stmt->bindParam(":city", $c);
-		$stmt->bindParam(":state", $st);
-		$stmt->bindParam(":zip", $z);
-		$stmt->bindParam(":phone", $p);
+		$stmt->bindParam(":location", $location);
+		$stmt->bindParam(":street", $street);
+		$stmt->bindParam(":city", $city);
+		$stmt->bindParam(":state", $state);
+		$stmt->bindParam(":zip", $zip);
+		$stmt->bindParam(":phone", $phone);
 		$stmt->execute();
  	} catch(Exception $e) {
 		echo print_r ($e,1);

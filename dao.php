@@ -55,7 +55,7 @@ public function getLocation($ID) {
 }
 
   public function updateLocation ($id, $location, $street, $city, $state, $zip, $phone) {
-	  	$conn = $this->getConnection();
+		$conn = $this->getConnection();
  	if(is_null($conn)){
 		return;
 		}
@@ -70,7 +70,6 @@ public function getLocation($ID) {
 		$stmt->bindParam(":zip", $zip);
 		$stmt->bindParam(":phone", $phone);
 		$stmt->execute();
-		return;
 		
  	} catch(Exception $e) {
 		echo print_r ($e,1);

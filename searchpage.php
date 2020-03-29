@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	?>
+
 <html>
 	<header>
 	<title>FruitFound</title>
@@ -44,7 +48,6 @@
 		</tbody>
 	</table>
 	<?php
-
 	include("footer.php");
 	?>
 	</body>

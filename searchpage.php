@@ -13,7 +13,6 @@
 
 	</header>
 	<body>
-	<div class="pagecontainer">
 	<?php 
 	include("header.php");
 	?>

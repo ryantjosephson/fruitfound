@@ -54,7 +54,7 @@ public function getLocation($ID) {
 	}
 }
 
-  public function deleteComment ($id) {
+  public function deleteLocation ($id) {
     $conn = $this->getConnection();
     $deleteQuery = "delete from userlistings where LocationID = :id";
     $q = $conn->prepare($deleteQuery);

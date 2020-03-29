@@ -44,7 +44,7 @@ public function search($zip) {
 		return;
 		}
 	try {
-	return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE zip = {$zip}");
+	return $conn->query("SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE Zip = {$zip}");
 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;

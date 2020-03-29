@@ -1,7 +1,7 @@
 <?php
-/* 	session_start();
+ 	session_start();
 	require_once 'dao.php';
-	$dao = new Dao(); */
+	$dao = new Dao(); 
 ?>
 
 <html>
@@ -36,7 +36,7 @@
 		</thead>
 		<tbody>
 		<?php
-	/* 		if(isset($_POST['zip'])){
+	 		if(isset($_POST['zip'])){
 				$lines = $dao->getLocations();
 				if (is_null($lines)) {
 				echo "There was an error.";
@@ -44,7 +44,7 @@
 				foreach ($lines as $line) {
 				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
-			} */
+			} 
 		?>
 		</tbody>
 	</table>

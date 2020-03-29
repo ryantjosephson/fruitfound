@@ -54,7 +54,7 @@ public function getLocation($ID) {
 	}
 }
 
-  public function editLocation($id, $l, $s, $c, $s, $z, $p) {
+  public function editLocation($id, $l, $s, $c, $st, $z, $p) {
 		$conn = $this->getConnection();
  	if(is_null($conn)){
 		return;
@@ -66,7 +66,7 @@ public function getLocation($ID) {
 		$stmt->bindParam(":location", $l);
 		$stmt->bindParam(":street", $s);
 		$stmt->bindParam(":city", $c);
-		$stmt->bindParam(":state", $s);
+		$stmt->bindParam(":state", $st);
 		$stmt->bindParam(":zip", $z);
 		$stmt->bindParam(":phone", $p);
 		$stmt->execute();

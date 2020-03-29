@@ -45,6 +45,7 @@
 				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
 			} 
+		}
 		?>
 		</tbody>
 	</table>

@@ -54,6 +54,31 @@ public function getLocation($ID) {
 	}
 }
 
+  public Function updateLocation ($id, $locationname,$street,$city,$state,$zip, $phone ) {
+	  	$conn = $this->getConnection();
+	if(is_null($conn)){
+		return;
+		}
+	try {
+		$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
+		$stmt = $connection->prepare($sql);
+		$stmt->bindParam(":location", $location);
+		$stmt->bindParam(":street", $street);
+		$stmt->bindParam(":city", $city);
+		$stmt->bindParam(":state", $state);
+		$stmt->bindParam(":zip", $zip);
+		$stmt->bindParam(":phone", $phone);
+		$stmt->bindParam(":locationid", $locationid);
+		$stmt->execute();
+		$_SESSION['message'] = "Location has been updated.";
+	return $loc;
+	} catch(Exception $e) {
+		echo print_r ($e,1);
+		exit;
+	}
+}
+	  
+
   public function deleteLocation ($id) {
     $conn = $this->getConnection();
     $deleteQuery = "delete from userlistings where LocationID = :id";
@@ -61,5 +86,7 @@ public function getLocation($ID) {
     $q->bindParam(":id", $id);
     $q->execute();
   }
+  
+
 }
   ?>

@@ -53,5 +53,13 @@ public function getLocation($ID) {
 		exit;
 	}
 }
+
+  public function deleteComment ($id) {
+    $conn = $this->getConnection();
+    $deleteQuery = "delete from userlistings where LocationID = :id";
+    $q = $conn->prepare($deleteQuery);
+    $q->bindParam(":id", $id);
+    $q->execute();
+  }
 }
   ?>

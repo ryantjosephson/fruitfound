@@ -11,10 +11,12 @@
 	</div>
 	<div class="header-right">
 	<div>
-		<?php
-		if($_SESSION['Auth']){
-		echo "<a class="loginpage" href="login.php">Login</a>";
-		}?>
+		<?php?>
+		//if($_SESSION['Auth']){
+		//echo "
+		<a class="loginpage" href="login.php">Login</a>
+		//";
+		//}?>
 	</div>
 	<div>
 		<a class="loginpage" href="logout.php">Logout</a>

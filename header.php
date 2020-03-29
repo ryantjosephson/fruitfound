@@ -1,3 +1,6 @@
+<?php
+	session_start();
+	?>
 <header class="header">
 	<div class="header-left">
 
@@ -12,7 +15,7 @@
 	<div>
 		<?php
 		if($_SESSION['auth']=true){
-		print "<a class='loginpage' href='login.php'>Login</a>";
+		echo "<a class='loginpage' href='login.php'>Login</a>";
 		}?>
 	</div>
 	<div>

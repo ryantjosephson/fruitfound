@@ -11,7 +11,7 @@
 		$state = $_POST['state']; 
 		$zip = $_POST['zip']; 
 		$phone = $_POST['phone'];
-	//	$dao->$updateLocation($locationid, $location, $street,$city, $state, $zip, $phone);
+		$dao->$updateLocation($locationid, $location, $street, $city, $state, $zip, $phone);
 		header("Location: https://fruitfound.herokuapp.com/account.php");
 		exit;
 	}else {

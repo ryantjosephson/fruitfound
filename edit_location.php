@@ -28,7 +28,7 @@ session_start();
 	<div>
 	<p>Edit your Location</p>
 	</div>
- 		 <form method="POST" action="editlocationhandler.php?id=<?php echo $_GET['id'];?>">
+ 		 <form method="POST" action="editlocationhandler.php">
 			<div class="newuserdiv"> <input type="hidden" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
 			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"> </div>
 			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php echo $location['Street'];?>"> </div>

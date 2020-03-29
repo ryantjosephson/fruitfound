@@ -10,7 +10,10 @@
 	</div>
 	<div class="header-right">
 	<div>
-
+		<?php
+		if($_SESSION['auth']=true){
+		print "<a class="loginpage" href="login.php">Login</a>";
+		}?>
 	</div>
 	<div>
 		<a class="loginpage" href="logout.php">Logout</a>

@@ -38,7 +38,7 @@ public function getLocations() {
 }
 
 //returns locations matching zip codes.
-public function getLocations($zip) {
+public function search($zip) {
 	$conn = $this->getConnection();
 	if(is_null($conn)){
 		return;

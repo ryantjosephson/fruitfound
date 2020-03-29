@@ -37,7 +37,7 @@
 		<tbody>
 		<?php
 	 		if(isset($_POST['zip'])){
-				$lines = $dao->getLocations();
+				$lines = $dao->search();
 				if (is_null($lines)) {
 				echo "There was an error.";
 			} else {

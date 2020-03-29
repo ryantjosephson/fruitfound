@@ -54,7 +54,7 @@ public function getLocation($ID) {
 	}
 }
 
-  public function updateLocation ($id, $location,$street,$city,$state,$zip, $phone ) {
+  public function updateLocation ($id, $location, $street, $city, $state, $zip, $phone) {
 	  	$conn = $this->getConnection();
 	if(is_null($conn)){
 		return;

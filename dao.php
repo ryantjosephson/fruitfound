@@ -56,10 +56,10 @@ public function getLocation($ID) {
 
   public function updateLocation ($id, $location, $street, $city, $state, $zip, $phone) {
 	  	$conn = $this->getConnection();
-	if(is_null($conn)){
+/* 	if(is_null($conn)){
 		return;
 		}
-	try {
+	try { */
 		$sql = "UPDATE  userlistings SET LocationName = :location, Street = :street, City = :city, State = :state, Zip = :zip, Phone = :phone WHERE LocationID = :locationid"; 
 		$stmt = $connection->prepare($sql);
 		$stmt->bindParam(":location", $location);
@@ -71,10 +71,11 @@ public function getLocation($ID) {
 		$stmt->bindParam(":locationid", $id);
 		$stmt->execute();
 		$_SESSION['message'] = "Location has been updated.";
-	} catch(Exception $e) {
+		
+/* 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;
-	}
+	} */
 }
 	  
 

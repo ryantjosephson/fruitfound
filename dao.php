@@ -68,6 +68,7 @@ public function getLocation($ID) {
 		$stmt->bindParam(":locationid", $id);
 		$stmt->execute();
 		$_SESSION['message'] = "Location has been updated.";
+		return;
 }
 	  
 

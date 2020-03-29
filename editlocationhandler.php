@@ -14,6 +14,7 @@
 		
 		//$dao->$updateLocation($locationid, $location, $street, $city, $state, $zip, $phone);
 		$dao->$updateLocation($_POST['locationid'],$_POST['locationname'],$_POST['street'],$_POST['city'],$_POST['state'],$_POST['zip'],$_POST['phone']);
+		$_SESSION['message'] = "Location has been updated.";
 		header("Location: https://fruitfound.herokuapp.com/account.php");
 		exit;
 	}else {

@@ -1,7 +1,7 @@
 <?php
-	session_start();
+/* 	session_start();
 	require_once 'dao.php';
-	$dao = new Dao();
+	$dao = new Dao(); */
 ?>
 
 <html>

@@ -12,8 +12,9 @@
 	$user = $stmt->fetch();
 	$password = $user["Password"];
 	$userID = $user["UserID"];
+	$userpass = htmlspecialchars($_POST['password']);
 
- if ($user && $_POST['password'] = $user['Password']) {
+ if ($user && $userpass = $user['Password']) {
     $_SESSION['auth'] = true;
 	$_SESSION['userID'] = $userID;
     header("Location: https://fruitfound.herokuapp.com/account.php");

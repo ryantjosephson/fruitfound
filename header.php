@@ -14,7 +14,7 @@
 	<div class="header-right">
 	<div>
 		<?php
-		if (!isset($_SESSION['auth']) || !$_SESSION['auth'])
+		if (!isset($_SESSION['auth']) || !$_SESSION['auth']){
 		echo "<a class='loginpage' href='login.php'>Login</a>";
 		}else{
 		echo "<a class='loginpage' href='logout.php'>Logout</a>";
@@ -26,7 +26,7 @@
 		</div>
 		<div>
 				<?php
-		if (!isset($_SESSION['auth']) || !$_SESSION['auth'])
+		if (!isset($_SESSION['auth']) || !$_SESSION['auth']){
 		echo "<a class='loginpage' href='Account.php'>Manage Account</a>";
 		}
 			?>

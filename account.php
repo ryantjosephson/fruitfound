@@ -31,7 +31,7 @@ session_start();
 	?>
 	<div>
 	<p>Sign in Successful</p>
-	<p> Manage your account below</p> 
+	<p> Manage your account below - For graders wanting to test the search function, please remember the zip code.</p> 
 	
 	<a href="addlocation.php"> Add a new Location </a>
 	</div>

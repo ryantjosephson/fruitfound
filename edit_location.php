@@ -30,8 +30,7 @@ session_start();
 	}
 	$location = $dao->getLocation($_GET['id']);
 	?>
-	
-	<div><pre><?php print_r($location);?></pre></div>
+
 	<div>
 	<p>Edit your Location</p>
 	</div>

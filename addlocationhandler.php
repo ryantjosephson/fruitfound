@@ -4,14 +4,14 @@
 	$dao = new Dao();
 	$connection = $dao->getConnection();
 	
-	if(isset($_POST['locationname'])){
+	if(isset($_POST['locationname'])&& isset($_POST['street']) && isset($_POST['city']) &&isset($_POST['state']) &&isset($_POST['zip']) &&isset($_POST['phone']) &&){
 	
-	$location = $_POST['locationname']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
-	$street = $_POST['street']; //!empty($_POST['lastname']) ? trim($_POST['lastname'] : null;	
-	$city = $_POST['city'];//!empty($_POST['username']) ? trim($_POST['username'] : null;
-	$state = $_POST['state']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
-	$zip = $_POST['zip']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
-	$phone = $_POST['phone']; //!empty($_POST['password']) ? trim($_POST['password'] : null;	
+	$location = htmlspecialchars($_POST['locationname']);
+	$street = htmlspecialchars($_POST['street']);
+	$city = htmlspecialchars($_POST['city']);
+	$state = htmlspecialchars($_POST['state']);
+	$zip = htmlspecialchars($_POST['zip']);
+	$phone = htmlspecialchars($_POST['phone']);
 	$userid= $_SESSION['userID'];
 
 	$sql = "INSERT INTO userlistings (LocationName, Street, City, State, Zip, Phone, UserID) VALUES (:location, :street, :city, :state, :zip, :phone, :userid)"; 
@@ -28,7 +28,7 @@
 	header("Location: https://fruitfound.herokuapp.com/account.php");
 	exit;
 	}else {
-		$_SESSION['message'] = "Location has not been added.";
+		$_SESSION['message'] = "Location has not been added. Missing fields.";
 		header("Location: https://fruitfound.herokuapp.com/account.php");
 		exit;
 	}

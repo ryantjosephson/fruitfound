@@ -62,8 +62,8 @@ public function getLocation($ID) {
 	$q = $conn->prepare($locationquery);
 	$q->bindParam(":locationid", $ID);
 	$q->execute();
-	$loc = $q->fetchAll();
-	return $loc;
+	$q->fetchAll();
+	return $q;
 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;

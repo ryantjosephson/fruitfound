@@ -20,7 +20,7 @@
 	<div>
 	<p>Enter your zipcode and search for fruit.  Results will post below.</p>
 	<form method="GET" action="searchpage.php">	
-		<div class="formdiv"> <Label for="zip">ZipCode: <input type="zipcode" id="zip" name="zip"> </div>
+		<div class="formdiv"> <Label for="zip">ZipCode: <input type="zipcode" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"> </div>
 		<div> <input type="submit" value="Submit"></div>
 	</form>
 	</div>

@@ -24,7 +24,7 @@
 		<div> <input type="submit" value="Submit"></div>
 	</form>
 	</div>
-	<table>
+	<table class="greenTable">
 		<thead>
 			<tr>
 				<th>Location</th>

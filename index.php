@@ -34,6 +34,7 @@
 				unset($_SESSION['messsage']);
 			}
 		?>
+		
 				<form method="POST" action="signuphandler.php">
 					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
@@ -41,7 +42,6 @@
 					<div class="newuserdiv"> Password:</br> <input type="password" id="password" name="password"> </div>
 					<div class="submitbutton"><input type="submit"  value="Submit"></div>
 				</form>
-	
 			</div>
 		</div>
 	</div>

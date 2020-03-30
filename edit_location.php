@@ -29,6 +29,7 @@ session_start();
 	<div>
 	<p>Edit your Location</p>
 	</div>
+	<div class="formcontainer">
  		 <form method="POST" action="editlocationhandler.php">
 			<div class="newuserdiv"> <input type="hidden" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
 			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"> </div>
@@ -39,9 +40,9 @@ session_start();
 			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php echo $location['Phone'];?>"> </div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
-	
+	</div>
 	<div>
-	 <table>
+	 <table class="greenTable">
 		<thead>
 			<tr>
 				<th>Location</th>

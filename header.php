@@ -14,10 +14,10 @@
 	<div class="header-right">
 	<div>
 		<?php
-		if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] = false ){
-		echo "<a class='loginpage' href='login.php'>Login</a>";
-		}else{
+		if($_SESSION['auth'] = true){
 		echo "<a class='loginpage' href='logout.php'>Logout</a>";
+		}else{
+		echo "<a class='loginpage' href='login.php'>Login</a>";
 		}
 			?>
 	</div>
@@ -26,7 +26,7 @@
 		</div>
 		<div>
 				<?php
-		if($_SESSION['auth'] = false ){
+		if($_SESSION['auth'] = true ){
 		echo "<a class='loginpage' href='Account.php'>Manage Account</a>";
 		}
 			?>

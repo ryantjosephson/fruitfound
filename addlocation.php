@@ -36,7 +36,7 @@ session_start();
 			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"></div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
-	
+	<a href="account.php">Cancel</a>
 	<div>
 	 <table class="greenTable">
 		<thead>
@@ -47,8 +47,6 @@ session_start();
 				<th>State</th>
 				<th>Zip</th>
 				<th>Phone</th>
-				<th>Edit</th>
-				<th>Delete</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -58,7 +56,7 @@ session_start();
 			echo "There was an error.";
 			} else {
 				foreach ($lines as $line) {
-				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td><td class='edit'><a href='edit_location.php?id={$line['LocationID']}'>X</a></td></tr>";
+				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
 			}
 		?>

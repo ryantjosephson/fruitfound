@@ -33,7 +33,7 @@ session_start();
 			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" ></div>
 			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" ></div>
 			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"></div>
-			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"></div>
+			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"></div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
 	

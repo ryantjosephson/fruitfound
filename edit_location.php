@@ -42,7 +42,7 @@ session_start();
 			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php echo $location[0]['City'];?>"> </div>
 			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php echo $location[0]['State'];?>"> </div>
 			<div class="newuserdiv"> Zip:</br> <input type="text" id="zip" name="zip" value="<?php echo $location[0]['Zip'];?>"> </div>
-			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php echo $location[0]['Phone'];?>" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"> </div>
+			<div class="newuserdiv"> Phone:</br> <input type="text" id="phone" name="phone" value="<?php echo $location[0]['Phone'];?>" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"> </div>
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
 	</div>

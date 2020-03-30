@@ -1,7 +1,6 @@
 <?php
-session_start();
-unset($_SESSION["userid"]);
-unset($_SESSION["message"]);
-$_SESSION["auth"] = false;
-header("Location:index.php");
+  session_start();
+  session_destroy();
+  header("Location: https://fruitfound.herokuapp.com/login.php");
+  exit;
 ?>

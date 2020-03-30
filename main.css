@@ -57,6 +57,7 @@ p{
 		background-color: white;
 }
 table.greenTable {
+	margin: 10px;
   font-family: Georgia, serif;
   border: 6px solid #24943A;
   background-color: #D4EED1;

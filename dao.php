@@ -58,9 +58,9 @@ public function getLocation($ID) {
 		return;
 		}
 	try {
-	$locationquery = "SELECT LocationID, LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID = :locationid";
+	$locationquery = "SELECT LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID = :locationid";
 	$q = $conn->prepare($locationquery);
-	$q->bindParam(":locationid, $ID");
+	$q->bindParam(":locationid", $ID);
 	$q->execute();
 	$loc = $q->fetchAll();
 	$_SESSION['message'] = print_r($ID);

@@ -25,8 +25,8 @@
 		<h2 id="title">Login</h2>
 		<form method="POST" action="loginhandler.php">
 			
-			<div class="formdiv"> <Label for="username">Username: <input type="text" id="username" name="username"> </div>
-			<div class="formdiv"> <Label for="password"> Password:&nbsp; <input type="password" id="password" name="password"> </div>
+			<div class="formdiv"> <Label for="username">Username: <input type="text" id="username" name="username" pattern="\[^A-Za-z0-9_@\.]|@{2,}|\.{5,}"> </div>
+			<div class="formdiv"> <Label for="password"> Password:&nbsp; <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"> </div>
 			<div> <input type="submit" value="Submit"></div>
 		</form>
 		

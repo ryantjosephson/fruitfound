@@ -8,6 +8,11 @@ body{
 	
 }
 
+#error{
+	color: red;
+	
+}
+
 .formcontainer{
 	display:flex;
 	flex-grow: 1;

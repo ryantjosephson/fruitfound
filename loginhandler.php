@@ -11,7 +11,7 @@
 	$stmt->execute([$_POST['username']]);
 	$user = $stmt->fetch();
 	$password = $user["Password"];
-	$userID = $user["UserID"];
+	$userID = htmlspecialchars($user["UserID"]);
 	$userpass = htmlspecialchars($_POST['password']);
 
  if ($user && $userpass = $user['Password']) {

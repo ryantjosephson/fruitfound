@@ -19,6 +19,10 @@
 	?>
 	<div>
 	<p>Enter your zipcode and search for fruit.  Results will post below.</p>
+			<?php 
+			include("header.php");
+			
+		?>
 	<form method="GET" action="searchpage.php">	
 		<div class="formdiv"> <Label for="zip">ZipCode: <input type="zipcode" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"> </div>
 		<div> <input type="submit" value="Submit"></div>
@@ -40,13 +44,17 @@
 	 		if(isset($_GET['zip'])){
 				$lines = $dao->search($_GET['zip']);
 				if (is_null($lines)) {
-				echo "There was an error.";
-			} else {
-				foreach ($lines as $line) {
-				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
+					$_SESSION['message'] = "There are no users with fruit in your area, sign up and be the first.";
+				} else {
+					foreach ($lines as $line) {
+					echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
 			} 
 		}
+			if (isset($_SESSION['message'])) {
+				echo "<div id='error'>{$_SESSION['message']}</div>";
+				unset($_SESSION['messsage']);
+			}
 		?>
 		</tbody>
 	</table>

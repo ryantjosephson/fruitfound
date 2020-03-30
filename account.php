@@ -35,7 +35,7 @@ session_start();
 	
 	<a href="addlocation.php"> Add a new Location </a>
 	</div>
-	 <table>
+	 <table class="greenTable">
 		<thead>
 			<tr>
 				<th>Location</th>

@@ -21,19 +21,18 @@ session_start();
 	</header>
 	<body>
 	<div class="pagecontainer">
-	
 	<?php 
 	include("header.php");
+	
 	$location = $dao->getLocation($_GET['id']);
 	?>
-	<div><pre><?php print_r($location);?></pre></div>
 	<div>
 	<p>Edit your Location</p>
 	</div>
 	<div class="editformcontainer">
  		 <form method="POST" action="editlocationhandler.php">
-			<div class="newuserdiv"> <input type="text" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
-			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"></div>
+			<div class="newuserdiv"> <input type="hidden" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
+			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"> </div>
 			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php echo $location['Street'];?>"> </div>
 			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php echo $location['City'];?>"> </div>
 			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php echo $location['State'];?>"> </div>

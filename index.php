@@ -39,7 +39,7 @@
 					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname" pattern="\^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$"> </div>
 					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"pattern="\^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$"> </div>
 					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username" pattern="\[^A-Za-z0-9_@\.]|@{2,}|\.{5,}"> </div>
-					<div class="newuserdiv"> Password:</br> <input type="text" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"> </div>
+					<div class="newuserdiv"> Password: &#40;Must contain one uppercase, one lowercase and one number, no special characters&#41;</br> <input type="text" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"> </div>
 					<div class="submitbutton"><input type="submit"  value="Submit"></div>
 				</form>
 			</div>

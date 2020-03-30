@@ -26,7 +26,7 @@
 		</div>
 		<div>
 				<?php
-		if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] = false ){
+		if($_SESSION['auth'] = false ){
 		echo "<a class='loginpage' href='Account.php'>Manage Account</a>";
 		}
 			?>

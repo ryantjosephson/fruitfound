@@ -17,7 +17,7 @@
 	<?php 
 	include("header.php");
 	?>
-	<div>
+	<div class="editformcontainer">
 	<p>Enter your zipcode and search for fruit.  Results will post below.</p>
 	<form method="GET" action="searchpage.php">	
 		<div class="formdiv"> <Label for="zip">ZipCode: <input type="zipcode" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"> </div>

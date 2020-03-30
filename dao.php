@@ -62,6 +62,7 @@ public function getLocation($ID) {
 	$q = $conn->prepare($locationquery);
 	$q->bindParam(":locationid, $ID");
 	$loc = $q->execute();
+	 $_SESSION['message'] = print_r($loc);
 	return $loc;
 	} catch(Exception $e) {
 		echo print_r ($e,1);

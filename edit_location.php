@@ -24,7 +24,7 @@ session_start();
 	<?php 
 	include("header.php");
 	
-	//$location = $dao->getLocation($_GET['id']);
+	$location = $dao->getLocation($_GET['id']);
 	
 	?>
 	<div><pre><?php print_r($location);?></pre></div>
@@ -33,7 +33,7 @@ session_start();
 	</div>
 	<div class="editformcontainer">
  		 <form method="POST" action="editlocationhandler.php">
-			<div class="newuserdiv"> <input type="text" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
+			<div class="newuserdiv"> <input type="hidden" id="locationid" name="locationid" value="<?php echo $_GET['id'];?>">
 			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php echo $location['LocationName'];?>"> </div>
 			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php echo $location['Street'];?>"> </div>
 			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php echo $location['City'];?>"> </div>

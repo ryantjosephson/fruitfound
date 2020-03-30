@@ -36,10 +36,10 @@
 		?>
 		
 				<form method="POST" action="signuphandler.php">
-					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname"> </div>
-					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"> </div>
-					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username"> </div>
-					<div class="newuserdiv"> Password:</br> <input type="password" id="password" name="password"> </div>
+					<div class="newuserdiv"> First Name:</br> <input type="text" id="firstname" name="firstname" pattern="\^([a-zA-Z']{1,25})$"> </div>
+					<div class="newuserdiv"> Last Name:</br><input type="text" id="lastname" name="lastname"pattern="\^([a-zA-Z']{1,25})$"> </div>
+					<div class="newuserdiv"> Username:</br> <input type="text" id="username" name="username" pattern="\^([a-zA-Z0-9@'!#&*^%]{8,15})$"> </div>
+					<div class="newuserdiv"> Password:</br> <input type="password" id="password" name="password" pattern="\^([a-zA-Z0-9@*#!&^%]{8,15})$"> </div>
 					<div class="submitbutton"><input type="submit"  value="Submit"></div>
 				</form>
 			</div>

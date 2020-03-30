@@ -21,5 +21,13 @@
 		}
 			?>
 	</div>
+		<div>
+		<a class='S' href='searchpage.php'>Search</a>"
+		<?php
+		if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] = false ){
+		echo "<a class='S' href='Account.php'>Manage Account</a>";
+		}
+			?>
+		</dev>
 	</div>
 </header>

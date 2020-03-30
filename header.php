@@ -22,12 +22,14 @@
 			?>
 	</div>
 		<div>
-		<a class='S' href='searchpage.php'>Search</a>"
-		<?php
+		<a class='loginpage' href='searchpage.php'>Search</a>
+		</div>
+		<div>
+				<?php
 		if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] = false ){
-		echo "<a class='S' href='Account.php'>Manage Account</a>";
+		echo "<a class='loginpage' href='Account.php'>Manage Account</a>";
 		}
 			?>
-		</dev>
+			</div>
 	</div>
 </header>

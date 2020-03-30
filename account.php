@@ -12,10 +12,11 @@ session_start();
 
 <html>
 	<header>
-	<title>Hello World</title>
+	<title>Fruit Found</title>
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
 
 	</header>
 	<body>

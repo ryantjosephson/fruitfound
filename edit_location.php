@@ -23,14 +23,15 @@ session_start();
 	<div class="pagecontainer">
 	<?php 
 	include("header.php");
+	
 	if (isset($_SESSION['message'])) {
-				echo "<div id='error'>{$_SESSION['message']}</div>";
-				unset($_SESSION['messsage']);
-			}
+		echo "<div id='error'>{$_SESSION['message']}</div>";
+		unset($_SESSION['messsage']);
+	}
 	$location = $dao->getLocation($_GET['id']);
 	?>
 	
-	<div><pre><?php print($location);?></pre></div>
+	<div><pre><?php print_r($location);?></pre></div>
 	<div>
 	<p>Edit your Location</p>
 	</div>

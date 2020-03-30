@@ -14,7 +14,7 @@
 	<div class="header-right">
 	<div>
 		<?php
-		if($_SESSION['auth'] = false || !(isset($_SESSION['auth']))){
+		if($_SESSION['auth'] = false ){
 		echo "<a class='loginpage' href='login.php'>Login</a>";
 		}?>
 	</div>

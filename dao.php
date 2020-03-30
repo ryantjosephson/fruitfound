@@ -58,11 +58,7 @@ public function getLocation($ID) {
 		return;
 		}
 	try {
-	$locationquery = "SELECT LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID = :locationid";
-	$q = $conn->prepare($locationquery);
-	$q->bindParam(":locationid, $ID");
-	$loc = $q->execute();
-	return $loc;
+	return $conn = query("SELECT LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID ={$ID}");
 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;

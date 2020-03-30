@@ -38,7 +38,7 @@ session_start();
 		</form>  
 	
 	<div>
-	 <table>
+	 <table class="greenTable">
 		<thead>
 			<tr>
 				<th>Location</th>

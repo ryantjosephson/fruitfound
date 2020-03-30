@@ -26,6 +26,8 @@ session_start();
 	
 	$location = $dao->getLocation($_GET['id']);
 	?>
+	
+	<pre><?php print_r($location);?>
 	<div>
 	<p>Edit your Location</p>
 	</div>

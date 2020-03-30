@@ -27,7 +27,7 @@ session_start();
 	$location = $dao->getLocation($_GET['id']);
 	?>
 	
-	<div><pre><?php print_r($location);?></pre></div>
+	<div><pre><?php print($location);?></pre></div>
 	<div>
 	<p>Edit your Location</p>
 	</div>
@@ -62,7 +62,7 @@ session_start();
 			echo "There was an error.";
 			} else {
 				foreach ($lines as $line) {
-				echo "<tr><td>".$line['LocationName']."</td></tr><td>{$line['Street']}</td><td>{$line['city']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
+				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['city']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
 			}
 		?>

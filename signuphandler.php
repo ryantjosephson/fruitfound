@@ -10,10 +10,10 @@
 	
 	if(isset($_POST['username'])){
 		
-	$first = $_POST['firstname']; //!empty($_POST['firstname']) ? trim($_POST['firstname'] : null;
-	$last = $_POST['lastname']; //!empty($_POST['lastname']) ? trim($_POST['lastname'] : null;	
-	$user = $_POST['username'];//!empty($_POST['username']) ? trim($_POST['username'] : null;
-	$pass = $_POST['password']; //!empty($_POST['password']) ? trim($_POST['password'] : null;
+	$first = htmlspecialchars($_POST['firstname']);
+	$last = htmlspecialchars($_POST['lastname']);
+	$user = htmlspecialchars($_POST['username']);
+	$pass = htmlspecialchars($_POST['password']);
 
 		
 		$sql = "SELECT COUNT(UserName) AS num FROM users WHERE UserName = :username";

@@ -10,8 +10,8 @@
 	$street = htmlspecialchars($_POST['street']);
 	$city = htmlspecialchars($_POST['city']);
 	$state = htmlspecialchars($_POST['state']);
-	$zip = htmlspecialchars($_POST['zip']);
-	$phone = htmlspecialchars($_POST['phone']);
+	$zip = $_POST['zip'];
+	$phone = $_POST['phone'];
 	$userid= $_SESSION['userID'];
 
 	$sql = "INSERT INTO userlistings (LocationName, Street, City, State, Zip, Phone, UserID) VALUES (:location, :street, :city, :state, :zip, :phone, :userid)"; 

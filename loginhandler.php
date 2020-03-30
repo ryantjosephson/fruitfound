@@ -13,7 +13,7 @@
 	$password = $user["Password"];
 	$userID = $user["UserID"];
 
- if ($user && htmlspecialchars($_POST['password']) = $user['Password']) {
+ if ($user && htmlspecialchars({$_POST['password']}) = $user['Password']) {
     $_SESSION['auth'] = true;
 	$_SESSION['userID'] = $userID;
     header("Location: https://fruitfound.herokuapp.com/account.php");

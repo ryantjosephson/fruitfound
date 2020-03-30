@@ -34,7 +34,7 @@ session_start();
 	<div class="editformcontainer">
  		 <form method="POST" action="editlocationhandler.php">
 			<div class="newuserdiv"> <input type="hidden" id="locationid" name="locationid" value="<?php print($_GET['id']);?>">
-			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php print"{$location['LocationName']}";?>"> </div>
+			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname" value="<?php print $location['LocationName'];?>"> </div>
 			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" value="<?php echo $location['Street'];?>"> </div>
 			<div class="newuserdiv"> City:</br> <input type="text" id="city" name="city" value="<?php echo $location['City'];?>"> </div>
 			<div class="newuserdiv"> State:</br> <input type="text" id="state" name="state" value="<?php echo $location['State'];?>"> </div>

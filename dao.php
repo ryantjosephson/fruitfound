@@ -58,7 +58,7 @@ public function getLocation($ID) {
 		return;
 		}
 	try {
-	return $conn = query("SELECT LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID ={$ID}");
+	return $conn->query("SELECT LocationName, Street, City, State, Zip, Phone FROM userlistings WHERE LocationID = {$ID}");
 	} catch(Exception $e) {
 		echo print_r ($e,1);
 		exit;

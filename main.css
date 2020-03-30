@@ -61,7 +61,7 @@ table.greenTable {
   font-family: Georgia, serif;
   border: 6px solid #24943A;
   background-color: #D4EED1;
-  width: 100%;
+  width: calc(100%-20px);
   text-align: center;
 }
 table.greenTable td, table.greenTable th {

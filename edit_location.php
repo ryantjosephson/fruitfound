@@ -65,7 +65,7 @@ session_start();
 			echo "There was an error.";
 			} else {
 				foreach ($lines as $line) {
-				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['city']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
+				echo "<tr><td>".$line['LocationName']."</td><td>{$line['Street']}</td><td>{$line['City']}</td><td>{$line['State']}</td><td>{$line['Zip']}</td><td>{$line['Phone']}</td></tr>";
 				}
 			}
 		?>

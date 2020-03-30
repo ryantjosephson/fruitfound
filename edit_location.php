@@ -25,7 +25,7 @@ session_start();
 	include("header.php");
 	
 	$location = $dao->getLocation($_GET['id']);
-	echo "<pre>$location</pre>";
+	echo "<p><pre>{$location}</pre></p>";
 	?>
 	<div>
 	<p>Edit your Location</p>

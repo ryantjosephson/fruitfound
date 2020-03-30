@@ -27,6 +27,7 @@ session_start();
 	<div>
 	<p>Add your Location</p>
 	</div>
+	<div class="editformcontainer">
  		 <form method="POST" action="addlocationhandler.php">
 			<div class="newuserdiv"> Location Name:</br> <input type="text" id="locationname" name="locationname"></div>
 			<div class="newuserdiv"> Street:</br><input type="text" id="street" name="street" ></div>
@@ -37,6 +38,7 @@ session_start();
 			<div class="submitbutton"><input type="submit"  value="Submit"></div>
 		</form>  
 	<a href="account.php">Cancel</a>
+	</div>
 	<div>
 	 <table class="greenTable">
 		<thead>
